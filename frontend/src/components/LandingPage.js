@@ -24,9 +24,9 @@ function LandingPage() {
       We help fellow nonrofits access the funding,
       tools,training and support they need to serve their communities. 
       </div>
-        <div className="flex">
-            <button className="text-white px-4 py-2 rounded-lg hover:bg-green-600 bg-yellow-500">jjj</button>
-            <div className="bg-green-400  text-white px-4 py-2 rounded-lg hover:bg-green-600"> <button className="">hhh</button>
+        <div className="flex mt-32">
+            <button className="text-gray-700 px-4 py-2  hover:bg-yellow-500 bg-yellow-600">Give now</button>
+            <div className="bg-green-700 ml-14  text-white px-4 py-2  hover:bg-green-600"> <button className="">Become a Volunteer</button>
         </div>
            </div>
       </div>
