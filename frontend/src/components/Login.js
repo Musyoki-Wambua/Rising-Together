@@ -57,7 +57,7 @@ function Login() {
               Log In
             </button>
 
-            <button className="block text-sm text-center text-gray-700 hover:underline mt-4">
+            <button className="block text-sm text-center text-gray-700  mt-4">
               Don't have an account?{" "}
               <button className="text-blue-500 hover:underline">
                 Create here.
