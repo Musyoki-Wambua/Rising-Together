@@ -10,7 +10,7 @@ function LandingPage() {
     <div className="w-full md:w-1/2 px-4">
       <img
 
-        className="mx-auto mt-32 h-96 mr-96   "
+        className="mx-auto mt-32 h-96 mr-96 rounded-md   "
         src="https://images.pexels.com/photos/11834966/pexels-photo-11834966.jpeg?cs=srgb&dl=pexels-safari-consoler-11834966.jpg&fm=jpg"
         alt="description"
       />
@@ -34,7 +34,7 @@ function LandingPage() {
     <div style={{ width: '47%' }} className="w-full  px-4">
       <img
         style={{ width: '700px' }}
-        className="mx-auto mt-7 h-96 mb-9"
+        className="mx-auto mt-7 h-96 mb-9 rounded-md"
         src="https://images.pexels.com/photos/11025027/pexels-photo-11025027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="description"
       />
