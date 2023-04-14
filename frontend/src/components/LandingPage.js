@@ -51,7 +51,7 @@ function LandingPage() {
     <div className="justify-center items-center text-center text-5xl font-sans text-green-800 mb-14 font-extrabold font-sans">Latest Donors</div>
     <div className="flex justify-center  ">
   <div className="flex flex-col    justify-center max-w-xs p-6 s sm:px-12 dark:bg-gray-900 dark:text-gray-100">
-	<img src="https://source.unsplash.com/150x150/?portrait?3" alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
+	<img src="https://loremflickr.com/320/240/guy/all" alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
 	<div className="space-y-4 text-center divide-y divide-gray-700">
 		<div className="my-2 space-y-1">
 			<h2 className="text-xl font-semibold xs:text-2xl">Leroy Jenkins</h2>
@@ -63,7 +63,7 @@ function LandingPage() {
 	</div>
     </div>
     <div className="flex flex-col ml-5  justify-center max-w-xs p-6 s sm:px-12 dark:bg-gray-900 dark:text-gray-100">
-	<img src="https://source.unsplash.com/150x150/?portrait?3" alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
+	<img src="https://loremflickr.com/320/240/boy/all" alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
 	<div className="space-y-4 text-center divide-y divide-gray-700">
 		<div className="my-2 space-y-1">
 			<h2 className="text-xl font-semibold xs:text-2xl">Trevor Febias</h2>
@@ -75,7 +75,7 @@ function LandingPage() {
 	</div>
     </div>
     <div className="flex flex-col ml-5  justify-center max-w-xs p-6 s sm:px-12 dark:bg-gray-900 dark:text-gray-100">
-	<img src="https://source.unsplash.com/150x150/?portrait?3" alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
+	<img src="https://loremflickr.com/320/240/man/all" alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
 	<div className="space-y-4 text-center divide-y divide-gray-700">
 		<div className="my-2 space-y-1">
             <h2 className="text-xl font-semibold xs:text-2xl">David Mwai</h2>
@@ -87,7 +87,7 @@ function LandingPage() {
 	</div>
     </div>
     <div className="flex flex-col ml-5  justify-center max-w-xs p-6 s sm:px-12 dark:bg-gray-900 dark:text-gray-100">
-	<img src="https://source.unsplash.com/150x150/?portrait?3" alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
+	<img src="https://loremflickr.com/320/240/person/all" alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
 	<div className="space-y-4 text-center divide-y divide-gray-700">
 		<div className="my-2 space-y-1">
         <h2 className="text-xl font-semibold xs:text-2xl">Joseph Wambua</h2>
