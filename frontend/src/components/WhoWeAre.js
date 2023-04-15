@@ -34,6 +34,11 @@ function WhoWeAre() {
                         alt="Team member"
                     />
                 </div>
+                <h3 className="mt-6 text-xl font-bold text-gray-800">
+              Jane Smith
+            </h3>
+            <p className="mt-2 text-gray-600">Co-founder and COO</p>
+          </div>
   )
 }
 
