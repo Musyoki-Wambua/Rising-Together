@@ -26,6 +26,14 @@ function WhoWeAre() {
                     </h3>
                     <p className="mt-2 text-gray-600">Co-founder and CEO</p>
                 </div>
+                <div className="lg:w-1/3 px-4 mb-8">
+                <div className="rounded-lg h-64 overflow-hidden">
+                    <img
+                        className="object-cover h-full w-full"
+                        src="https://images.unsplash.com/photo-1595432677905-234684851637"
+                        alt="Team member"
+                    />
+                </div>
   )
 }
 
