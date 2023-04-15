@@ -20,6 +20,12 @@ function WhoWeAre() {
                 src="https://images.unsplash.com/photo-1579788598106-28d9c9f46bb8"
                 alt="Team member"
               />
+                </div>
+                    <h3 className="mt-6 text-xl font-bold text-gray-800">
+                    John Doe
+                    </h3>
+                    <p className="mt-2 text-gray-600">Co-founder and CEO</p>
+                </div>
   )
 }
 
