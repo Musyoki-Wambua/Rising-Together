@@ -20,7 +20,7 @@ class ReviewsController < ApplicationController
       end
     end
   
-    def delete
+    def destroy
       review = Review.find(params[:id])
       review.delete
       head :no_content
@@ -29,6 +29,6 @@ class ReviewsController < ApplicationController
     private
   
     def review_params
-      params.require(:review).permit(:rating, :comment, :reviewer_name)
+      params.require(:review).permit(:rating, :comments, :user_id, :organization_id)
     end
   end
