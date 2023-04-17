@@ -101,25 +101,25 @@
 
 
 #Create 8 random donations 
-# donation1=Donation.create(contributed_amount:"$960,000", organization_id: 5, user_id: 2)
-# donation2=Donation.create(contributed_amount:"$80,000", organization_id: 2, user_id: 4)
-# donation3=Donation.create(contributed_amount:"$630,000", organization_id: 3, user_id: 8)
-# donation4=Donation.create(contributed_amount:"$960,000", organization_id: 5, user_id: 1)
-# donation5=Donation.create(contributed_amount:"$60,000", organization_id: 4, user_id: 6)
-# donation6=Donation.create(contributed_amount:"$110,000", organization_id: 5, user_id: 3)
-# donation7=Donation.create(contributed_amount:"$420,000", organization_id: 4, user_id: 10)
-# donation8=Donation.create(contributed_amount:"$90,000", organization_id: 3, user_id: 9)
+donation1=Donation.create(contribution_amount:"$960,000", organization_id: 5, user_id: 2)
+ donation2=Donation.create(contribution_amount:"$80,000", organization_id: 2, user_id: 4)
+donation3=Donation.create(contribution_amount:"$630,000", organization_id: 3, user_id: 8)
+ donation4=Donation.create(contribution_amount:"$960,000", organization_id: 5, user_id: 1)
+donation5=Donation.create(contribution_amount:"$60,000", organization_id: 4, user_id: 6)
+donation6=Donation.create(contribution_amount:"$110,000", organization_id: 5, user_id: 3)
+donation7=Donation.create(contribution_amount:"$420,000", organization_id: 4, user_id: 10)
+ donation8=Donation.create(contribution_amount:"$90,000", organization_id: 3, user_id: 9)
 
 #Create 12 random reviews 
 
-12.times do 
-    review = Review.create(
-      user_id: rand(1..20),
-      organization_id: rand(1..20),
-      rating: rand(1..5),
-      comments: Faker::Lorem.sentence
-    )
-     end
+# 12.times do 
+#     review = Review.create(
+#       user_id: rand(1..20),
+#       organization_id: rand(1..20),
+#       rating: rand(1..5),
+#       comments: Faker::Lorem.sentence
+#     )
+#      end
 
 # #Create 5 random profiles  
 # profile1=Profile.create(
