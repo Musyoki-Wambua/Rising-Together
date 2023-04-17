@@ -111,6 +111,7 @@
 # donation8=Donation.create(contributed_amount:"$90,000", organization_id: 3, user_id: 9)
 
 #Create 12 random reviews 
+
 12.times do 
     review = Review.create(
       user_id: rand(1..20),
