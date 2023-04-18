@@ -212,7 +212,7 @@ function HomePage() {
 
       {/* bottom of top cards */}
       <div>
-        <h1 className="text-center  text-4xl mt-8">How it works</h1>
+        <h1 className="text-center text-green-800 text-4xl mt-8">How it works</h1>
       </div>
       <div
         style={{ width: "150vh", height: "" }}
@@ -316,26 +316,34 @@ function HomePage() {
         </a>
       </div>
 
-       
+      <div className="mt-20 mx-auto  p-4 flex   ">
+        <div className="grid grid-cols-2 ">
+          <div className="mt-40 tet-center">
+            <h1 className="text-5xl ml-32 text-green-800 font-bold text-center">
+            Together Fund
+            </h1>
+            <p className="ml-32 mt-11 text-xl text-center">
+              Raising Together is a charity website that connects people and
+              organizations to donate and fundraise for various causes,
+              empowering individuals to make a positive impact in the world.
+            </p>
 
-<div className="mt-8   md:w-1/2 p-4 flex   ">
-          <div className="grid grid-cols-2 gap-1 gap-x-6">
-            <div className="">
-            <h1>Disaster Recovery</h1>
-    <p>
-      GlobalGiving makes it easy to donate to reliable, locally-led disaster
-      relief and recovery efforts around the world.
-    </p>
+            <div className="text-center mt-8 ml-32 mx-auto justify-center">
+              {" "}
+              <button className="bg-green-600 w-32 h-11 text-white text-bold hover:bg-green-800"> Impact Hub
+ </button>
             </div>
+          </div>
 
-            <div className="">
+          <div className="">
             <img
-      class="w-96"
-      src="https://img.icons8.com/external-jumpicon-line-ayub-irawan/256/external-_5-kwanzaa-jumpicon-(line)-jumpicon-line-ayub-irawan.png"
-    />
-            </div>
-            </div>          
-            </div>
+              style={{ width: "100vh", height: "55vh" }}
+              className="     "
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Continents.svg/1920px-Continents.svg.png?20061115170447"
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
