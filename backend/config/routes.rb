@@ -12,6 +12,10 @@ Rails.application.routes.draw do
 
      resources :reviews
      resources :donations
+     resources :organizations
+     resources :user,only: [:index, :create, :destroy]
+     resources :profile, expects: [:index]
+
 
     # post '/donations', to: 'donations#create'
     # put '/donations/:id', to: 'donations#update'
