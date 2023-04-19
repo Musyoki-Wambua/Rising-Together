@@ -1,18 +1,13 @@
 import React from "react";
-import johnDoe from '../images/John.jpg';
-import janeSmith from '../images/jane.jpg';
-import michaelJohnson from '../images/michael.jpg';
-import stellaStephanie from '../images/Stella.jpg';
-import oliviaCamilla from '../images/Olivia.jpg';
-import rinHinata from '../images/Rin.jpg';
+
 
 const WhoWeAre = () => {
   return (
-    <section className="bg-gray-100">
+    <section className="bg-gray-100 font-serif">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-3xl mx-auto text-center pb-12">
           <h2 className="text-3xl font-bold text-gray-800">Who We Are</h2>
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-grey-600">
             We are a team of dedicated individuals who strive to make a positive
             impact in the world. Our mission is to help those in need and create
             a better future for generations to come. Below are the team meambers in our program.
@@ -23,9 +18,11 @@ const WhoWeAre = () => {
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 className="object-cover h-full w-full"
-                src={johnDoe}
+                src="https://media.istockphoto.com/id/1274979025/photo/confident-businessman-looking-forward-and-being-cool.jpg?b=1&s=170667a&w=0&k=20&c=bMqkV9j7Qzk-12EorlPbm8y0F3MUOhDUIDOmNZlsJHc="
                 alt="Team member"
-              />
+              /> 
+              
+            
             </div>
             <h3 className="mt-6 text-xl font-bold text-gray-800">
               John Doe
@@ -37,7 +34,7 @@ const WhoWeAre = () => {
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 className="object-cover h-full w-full"
-                src={janeSmith}
+                src="https://media.istockphoto.com/id/1378072714/photo/young-woman-standing-outdoors.jpg?b=1&s=170667a&w=0&k=20&c=WSur2x1htnIWNw7QmlxWgjquRW8Dz5GodPvZ3-d1-W8="
                 alt="Team member"
               />
             </div>
@@ -51,7 +48,7 @@ const WhoWeAre = () => {
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 className="object-cover h-full w-full"
-                src={michaelJohnson}
+                src="https://media.istockphoto.com/id/1201144328/photo/smiling-black-man-in-suit-posing-on-studio-background.jpg?s=612x612&w=0&k=20&c=abcU_jcFCUgSkmpXAd5qfrsUFUcdv6oOMdtW2U-m_8g="
                 alt="Team member"
               />
             </div>
@@ -65,7 +62,7 @@ const WhoWeAre = () => {
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 className="object-cover h-full w-full"
-                src={stellaStephanie}
+                src="https://media.istockphoto.com/id/1180926825/photo/studio-headshot-of-a-beautiful-businesswoman.jpg?b=1&s=170667a&w=0&k=20&c=se-QitxWiiIDodQ86Rv3CVMmeGsAmfNQdbjyAv9Pr9s="
                 alt="Team member"
               />
             </div>
@@ -79,7 +76,7 @@ const WhoWeAre = () => {
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 className="object-cover h-full w-full"
-                src={oliviaCamilla}
+                src="https://media.istockphoto.com/id/1181092015/photo/latin-haired-latina-woman-with-her-arms-crossed-looking-at-the-camera-while-smiling.jpg?s=612x612&w=0&k=20&c=ywXKnI6xKsCcz7n1ye1GpmFzdPiXIMEG_q47-2R3nPE="
                 alt="Team member"
               />
             </div>
@@ -93,7 +90,7 @@ const WhoWeAre = () => {
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 className="object-cover h-full w-full"
-                src={rinHinata}
+                src="https://media.istockphoto.com/id/109840614/photo/happy-japanese-man.jpg?b=1&s=170667a&w=0&k=20&c=i2YogrHIZlxB6S9O4tN4TslhtoegVSRsYpVN2F3024E="
                 alt="Team member"
               />
             </div>
@@ -110,22 +107,22 @@ const WhoWeAre = () => {
           <div style={{width: '300px', marginRight: '30px', marginBottom: '30px'}}>
               <h3 style={{color: '#374151', fontSize: '1.5rem', fontWeight: 'bold'}}>Popular:</h3>
               <ul style={{listStyle: 'circle', paddingLeft: 0}}>
-                <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Praesent vestibulum aenean</li>
-                <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Cum sociis natoque penatibus</li>
-                <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Magnis dis parturient montes</li>
-                <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Fusce feugiat malesuada odio</li>
-                <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Morbi nunc odio gravida at</li>
+                <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Volunteer management</li>
+                <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Public relations</li>
+                <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Capacity building</li>
+                <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Fundraising</li>
+                <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Capacity building</li>
               </ul>
           </div>
 
           <div style={{width: '300px', marginRight: '30px', marginBottom: '30px'}}>
             <h3 style={{color: '#374151', fontSize: '1.5rem', fontWeight: 'bold'}}>Projects:</h3>
             <ul style={{listStyle: 'circle', paddingLeft: 0}}>
-              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Praesent vestibulum aenean</li>
-              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Cum sociis natoque penatibus</li>
-              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Magnis dis parturient montes</li>
-              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Fusce feugiat malesuada odio</li>
-              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Morbi nunc odio gravida at</li>
+              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Community development</li>
+              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Health care and sanitation</li>
+              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Impacting knowledge and education</li>
+              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>FEnvironmental conservation</li>
+              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Disaster relief and management</li>
             </ul>
           </div>
 

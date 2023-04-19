@@ -19,24 +19,24 @@ function NavBar() {
             <div className="hidden md:block w-full md:w-auto" id="mobile-menu">
             <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
                 <li>
-                 <a href="#" class="text-white font-bold px-3 py-2 rounded-md bg-gray-300 hover:bg-firebrick transition-colors duration-300">Home</a>
+                 <a href="#" class="text-white font-bold px-3 py-2 rounded-md hover:bg-gray-700   hover:bg-firebrick transition-colors duration-300">Home</a>
                 </li>
             
                 <li>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300">Who We Are</a>
+                <a href="#" className="text-white hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300">Who We Are</a>
                 </li>
 
                 <li>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300">Get Involved</a>
+                <a href="#" className="text-white hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300">Get Involved</a>
                 </li>
 
                 <li>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300">Our Campaigns</a>
+                <a href="#" className="text-white hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300">Our Campaigns</a>
                 </li>
                 
 
                 <li>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300">Pages  </a>
+                <a href="#" className="text-white hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300">Pages  </a>
                 </li>
 
 

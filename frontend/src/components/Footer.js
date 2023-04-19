@@ -57,31 +57,31 @@ function Footer() {
           <nav aria-label="Footer Navigation - Services" class="mt-6">
             <ul class="space-y-4 text-sm">
               <li>
-              <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+              <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   Fundraising and Donations
                 </a>
               </li>
 
               <li>
-              <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+              <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   Volunteer Recruitment and Management
                 </a>
               </li>
 
               <li>
-              <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+              <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   Grant and Schorlarship Management
                 </a>
               </li>
 
               <li>
-              <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+              <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   Corporate Social Responsibility(CSR)
                 </a>
               </li>
 
               <li>
-              <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+              <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   Community Outreach and Advocacy
                 </a>
               </li>
@@ -95,19 +95,19 @@ function Footer() {
           <nav aria-label="Footer Navigation - Company" class="mt-6">
             <ul class="space-y-4 text-sm">
               <li>
-                <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+                <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   About
                 </a>
               </li>
 
               <li>
-                <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+                <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   Who We Are
                 </a>
               </li>
 
               <li>
-                <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+                <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                 Meet the Team
                 </a>
               </li>
@@ -121,13 +121,13 @@ function Footer() {
           <nav aria-label="Footer Navigation - Company" class="mt-6">
             <ul class="space-y-4 text-sm">
               <li>
-                <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+                <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   Contact
                 </a>
               </li>
 
               <li>
-                <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+                <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   FAQs
                 </a>
               </li>
@@ -143,25 +143,25 @@ function Footer() {
           <nav aria-label="Footer Navigation - Legal" class="mt-6">
             <ul class="space-y-4 text-sm">
               <li>
-                <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+                <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   Contract Drafting
                 </a>
               </li>
 
               <li>
-                <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+                <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   Corporate Law
                 </a>
               </li>
 
               <li>
-                <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+                <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   Tax and Accounting Policy
                 </a>
               </li>
 
               <li>
-                <a href="#" class="text-purple-500 transition hover:text-purple-600 hover:underline">
+                <a href="#" class="text-white-500 transition hover:text-purple-600 hover:underline">
                   Legal Representation
                 </a>
               </li>
