@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <section style={{ backgroundColor: '#0E503F' }} className="min-h-screen bg-green-900">
@@ -24,9 +25,9 @@ function LandingPage() {
       We help fellow nonrofits access the funding,
       tools,training and support they need to serve their communities. 
       </div>
-        <div className="flex mt-32">
-            <button className="text-gray-700 px-4 py-2  hover:bg-yellow-500 bg-yellow-600">Give now</button>
-            <div className="bg-green-700 ml-14  text-white px-4 py-2  hover:bg-green-600"> <button className="">Become a Volunteer</button>
+         <div className="flex mt-32">
+         <Link to="/login">  <button className="text-gray-700 px-4 py-2  hover:bg-yellow-500 bg-yellow-600">Give now</button></Link>
+            <div className="bg-green-700 ml-14  text-white px-4 py-2  hover:bg-green-600"> <Link to="/signup">   <button className="">Become a Volunteer</button></Link>
         </div>
            </div>
       </div>
