@@ -55,10 +55,11 @@ jobs:
             bin/rails db:migrate 
           fi 
 
-      - name: Test 
-        run: | 
-        cd backend 
-        bin/rails test 
+      - name: Test
+        run: |
+          cd backend
+          bin/rails test
+
 
 
     
