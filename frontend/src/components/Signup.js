@@ -1,7 +1,7 @@
-
-function Signup() {
+import { Link } from "react-router-dom";
+function SignupPage() {
     return (
-        <section style={{ backgroundColor: '#0E503F' }} class="flex items-center justify-center min-h-screen">
+        <section style={{ backgroundColor: '#0E503F' }} className="flex items-center justify-center min-h-screen">
 
         
        
@@ -80,18 +80,18 @@ function Signup() {
                   name="password"
                 />
               </div>
-              <button
+              <Link to="/organizationList"><button
                 className="bg-green-400 w-full text-white px-4 py-2 rounded-lg hover:bg-green-600"
                 type="submit"
               >
                 Log In
               </button>
-  
+              </Link>
               <button className="block text-sm text-center text-gray-700  mt-4">
                  have an account?{" "}
-                <button className="text-blue-500 hover:underline">
+                <Link to="/login"><button className="text-blue-500 hover:underline">
                   Login here.
-                </button>
+                </button></Link>
               </button>
             </form>
           </div>
@@ -100,5 +100,5 @@ function Signup() {
     );
   }
   
-  export default Signup;
+  export default SignupPage;
   

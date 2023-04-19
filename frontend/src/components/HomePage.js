@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 function HomePage() {
   const [ngos, setNGOs] = useState([]);
 
@@ -28,7 +29,9 @@ function HomePage() {
 
   return (
     <section className="font-serif">
+       
       <div className="font-serif flex flex-wrap">
+        
         <div className="mt-6 w-full  md:w-1/2 p-">
           <div className="h-52">
             <a
@@ -36,10 +39,10 @@ function HomePage() {
               style={{ width: "", height: "67.6vh" }}
               className="mt- group relative block bg-black"
             >
-              {targetedNGO && (
+              {ngos.length > 0 && (
                 <img
                   alt="Developer"
-                  src={`${targetedNGO.image_url}`}
+                  src={`${ngos[0].image_url}`}
                   className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
               )}
@@ -47,20 +50,24 @@ function HomePage() {
               <div className=" relative p-4 sm:p-6 lg:p-8">
                 <div className="text-white translate-y-11  mt-96  transition-all group-hover:translate-y-0 group-hover:opacity-100  ">
                   <p className="text-gray-600  text-sm">.</p>
-                  {targetedNGO && (
+                  {ngos.length > 0 && (
                     <p className="text-gray-400  text- mt-14">
-                      {targetedNGO.location}
+                      {ngos[0].location}
                     </p>
                   )}
-                  {targetedNGO && (
+                  {ngos.length > 0 && (
                     <p className="text-4xl font-serif mt-">
-                      {targetedNGO.name}
+                      {ngos[0].name}
                     </p>
                   )}
                   <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                    <button className="bg-green-700 w-full h-8 text-xl    text-white">
-                      Donte
-                    </button>
+                  {ngos.length > 0 && (
+        <Link to={`/organizationDetails/${ngos[0].id}`}>
+          <button className="bg-green-700 w-full h-8 text-xl text-white">
+            Donate
+          </button>
+        </Link>
+      )}
                   </div>
                 </div>
               </div>
@@ -77,22 +84,24 @@ function HomePage() {
                 style={{ width: "50vh ", height: "33.6vh" }}
                 className=" group relative block bg-black"
               >
+                {ngos.length > 0 && (
                 <img
                   alt="Developer"
-                  src="https:images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                  src={`${ngos[1].image_url}`}
                   className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
+              )}
 
                 <div className=" relative p-4 sm:p-6 lg:p-8">
                   <div className="mt- sm:mt- lg:mt-44">
                     <div className="text-white translate-y-11   transition-all group-hover:translate-y-0 group-hover:opacity-100  ">
-                      {targetedNGO2 && (
+                    {ngos.length > 0 && (
                         <p className="text-gray-400  text-sm mt-20">
-                          {targetedNGO2.location}
+                          {ngos[1].location}
                         </p>
                       )}
-                      {targetedNGO2 && (
-                        <p className="text-lg mt-">{targetedNGO2.name}</p>
+                      {ngos.length > 0 && (
+                        <p className="text-lg mt-">{ngos[1].name}</p>
                       )}
                       <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                         <button className="bg-green-700 w-full h-8 text-xl    text-white">
@@ -111,18 +120,20 @@ function HomePage() {
                 style={{ width: "50vh ", height: "33.6vh" }}
                 className=" group relative block bg-black"
               >
+               {ngos.length > 0 && (
                 <img
                   alt="Developer"
-                  src="https:images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                  src={`${ngos[2].image_url}`}
                   className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
+              )}
 
                 <div className=" relative p-4 sm:p-6 lg:p-8">
                   <div className="mt- sm:mt- lg:mt-44">
                     <div className="text-white translate-y-11   transition-all group-hover:translate-y-0 group-hover:opacity-100  ">
-                      {targetedNGO3 && (
+                    {ngos.length > 0 && (
                         <p className="text-gray-400  text-sm mt-20">
-                          {targetedNGO3.location}
+                          {ngos[2].location}
                         </p>
                       )}
                       {targetedNGO3 && (
@@ -144,11 +155,13 @@ function HomePage() {
                 style={{ width: "50vh ", height: "33.6vh" }}
                 className=" group relative block bg-black"
               >
+                {ngos.length > 0 && (
                 <img
                   alt="Developer"
-                  src="https:images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                  src={`${ngos[3].image_url}`}
                   className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
+              )}
 
                 <div className=" relative p-4 sm:p-6 lg:p-8">
                   <div className="mt- sm:mt- lg:mt-44">
@@ -177,13 +190,13 @@ function HomePage() {
                 style={{ width: "50vh ", height: "33.6vh" }}
                 className=" group relative block bg-black"
               >
-                {targetedNGO5 && (
-                  <img
-                    alt="Developer"
-                    src={`${targetedNGO5.website}`}
-                    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-                  />
-                )}
+                {ngos.length > 0 && (
+                <img
+                  alt="Developer"
+                  src={`${ngos[4].image_url}`}
+                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+              )}
 
                 <div className=" relative p-4 sm:p-6 lg:p-8">
                   <div className="mt- sm:mt- lg:mt-44">
@@ -209,7 +222,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-
+       
       {/* bottom of top cards */}
       <div>
         <h1 className="text-center text-green-800 text-4xl mt-8">How it works</h1>
@@ -347,4 +360,4 @@ function HomePage() {
     </section>
   );
 }
-export default HomePage;
+export default HomePage
