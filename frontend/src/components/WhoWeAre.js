@@ -121,7 +121,7 @@ const WhoWeAre = () => {
               <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Community development</li>
               <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Health care and sanitation</li>
               <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Impacting knowledge and education</li>
-              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>FEnvironmental conservation</li>
+              <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Environmental conservation</li>
               <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>Disaster relief and management</li>
             </ul>
           </div>
