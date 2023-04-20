@@ -1,0 +1,16 @@
+
+
+.my-input {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+  
+.my-input:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 5px #2196f3;
+     /* color: ; */
+}
+  

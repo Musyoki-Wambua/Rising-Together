@@ -1,3 +1,4 @@
+
 #Create 10 random users 
 user1=User.create(username: "kante", email: "kante@kante", password_digest: "1234", gender: "Male", role: "user")
 user2=User.create(username: "mike", email: "mike@mike.com", password_digest: "efgh", gender: "Male", role: "user")
@@ -325,6 +326,8 @@ volunteer5=Volunteer.create(organization_name: "UNICEF", user_id: 8, organizatio
 volunteer6=Volunteer.create(organization_name: "End Poverty Now", user_id: 6, organization_id: 15, username: "Joy")
 volunteer7=Volunteer.create(organization_name: "Women Africa", user_id: 9, organization_id: 10, username: "Manu")
 volunteer8=Volunteer.create(organization_name: "Charity Water", user_id: 10, organization_id: 1, username: "Nina")
+
+
 
 
 
