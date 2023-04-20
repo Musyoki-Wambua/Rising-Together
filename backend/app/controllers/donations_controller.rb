@@ -1,13 +1,10 @@
 class DonationsController < ApplicationController
-    # app/controllers/donations_controller.rb
-
-#class DonationsController < ApplicationController
-    def index
-      donations = Donation.all
-      render json:donation
+  # load_and_authorize_resource :donation 
+  def index
+   render json: Donation.all
+   
     end
    
-
     def show
         donation = Donation.find(params[:id])
         render json: donation
@@ -15,20 +12,17 @@ class DonationsController < ApplicationController
     
     def create
       donation = Donation.new(donation_params)
-  
       if donation.save
-        redirect_to donation, notice: "Donation was successfully created."
-      else
-        render :new
-      end
+       render json: donation, status: :created
+       else
+      render json: donation.errors, status: :unprocessable_entity
+     end
     end
   
    
     private
   
     def donation_params
-      params.require(:donation).permit(:contribution_amount, :organization_id, :user_id)
+      params.require(:donation).permit(:contributed_amount, :organization_id, :user_id, :username)
     end
-  end
-  
 end

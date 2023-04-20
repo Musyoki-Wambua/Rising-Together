@@ -18,97 +18,99 @@
 # user10=User.create(username: "nina", email: "nina@nina.com", password_digest: "1774", gender: "Female", role: "user")
 
 #Create 5 random organizations 
-# organization1=Organization.create(
-# image_url: "https://pbs.twimg.com/media/FMcDkWKXwAE4ZVm?format=jpg&name=4096x4096", 
-# name: "Feed Children", 
-# year_established: 2000, 
-# about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tortor pulvinar, elementum ante facilisis, posuere lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed semper, nibh euismod elementum egestas, quam enim finibus libero, eu ornare leo sapien id urna. Ut semper viverra tincidunt. Pellentesque porta ex porttitor, imperdiet odio facilisis, sodales erat. Etiam tortor ligula, facilisis at elit vel, pretium gravida ligula. Quisque tincidunt dui non fringilla blandit. Cras pellentesque mi id varius lacinia. Duis eget risus finibus, bibendum est sed, fringilla nisi. Praesent in commodo nibh, non viverra nunc. Duis ut tellus in lorem tincidunt vulputate vitae a leo. Nullam bibendum cursus nulla, at viverra mi imperdiet in. Vestibulum id magna commodo, vulputate dolor ut, sodales arcu. Etiam mollis non velit eget pharetra. Maecenas dignissim, lacus eu pellentesque consectetur, nunc risus gravida ante, vitae tempor lectus dui at ipsum. Nam molestie tellus ipsum, sed eleifend ante sagittis a.", 
-# address: "11510 POEMA PL CHATSWORTH CA 91311-1113 USA",
-# contact: 02177764, 
-# user_id: 5)
+organization1=Organization.create(
+name: "Charity Water",
+description: "Charity Water is a non-profit organization bringing clean and safe drinking water to people in developing countries.",
+location: "Nairobi, Kenya",
+year_established: 2020,
+image_url: "https://yuva.info/wp-content/uploads/2022/05/pexels-photo-9090746.jpeg",
+video_url: "https://www.youtube.com/embed/Uoq2EG3BpS4",
+info: "Doctors Without Borders, also known as Médecins Sans Frontières (MSF), is an international humanitarian organization that provides medical aid to people in crisis situations around the world. The organization was founded in 1971 by a group of French doctors and journalists who wanted to provide emergency medical assistance to people affected by war, natural disasters, and other humanitarian crises.",
+contact: "+25473457234",
+user_id:3
+)
 
-# organization2=Organization.create(
-# image_url: "https://6amcity.brightspotcdn.com/dims4/default/dbd026e/2147483647/strip/true/crop/1440x1080+0+170/resize/500x375!/quality/90/?url=https%3A%2F%2Fk1-prod-sixam-city.s3.amazonaws.com%2Fbrightspot%2F30%2Fdc%2Fe3cd893842fe8500d194c03c29f0%2F277958277-1037397217185242-8235575626330250868-n.jpg", 
-# name: "Charity Foundation International", 
-# year_established: 2010, 
-# about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tortor pulvinar, elementum ante facilisis, posuere lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed semper, nibh euismod elementum egestas, quam enim finibus libero, eu ornare leo sapien id urna. Ut semper viverra tincidunt. Pellentesque porta ex porttitor, imperdiet odio facilisis, sodales erat. Etiam tortor ligula, facilisis at elit vel, pretium gravida ligula. Quisque tincidunt dui non fringilla blandit. Cras pellentesque mi id varius lacinia. Duis eget risus finibus, bibendum est sed, fringilla nisi. Praesent in commodo nibh, non viverra nunc. Duis ut tellus in lorem tincidunt vulputate vitae a leo. Nullam bibendum cursus nulla, at viverra mi imperdiet in. Vestibulum id magna commodo, vulputate dolor ut, sodales arcu. Etiam mollis non velit eget pharetra. Maecenas dignissim, lacus eu pellentesque consectetur, nunc risus gravida ante, vitae tempor lectus dui at ipsum. Nam molestie tellus ipsum, sed eleifend ante sagittis a.", 
-# address: "1  RUTH AVE CHICOPEE MA 01013-3037 USA",
-# contact: 0217777564, 
-# user_id: 7)
+organization1=Organization.create(
+name: "Nelson Mandela Foundation",
+description: "The Nelson Mandela Foundation is a non-profit organisation founded by Nelson Mandela in 1999 to promote Mandela's vision of freedom and equality for all. The chairman is professor Njabulo Ndebele.",
+location: "Johannesburg, South Africa",
+year_established: 1996,
+image_url: "https://info.happy-science.org/files/2015/11/qzyt98zg.jpg",
+video_url: "https://www.youtube.com/embed/zvAnEuRQV2Y",
+info: "The Nelson Mandela Foundation was established in 1999 when its Founder, Mr Nelson Mandela, stepped down as the President of South Africa.
 
-# organization3=Organization.create(
-# image_url: "https://williamsburgcommunityfoundation.org/wp-content/uploads/2019/11/Walsingham-862x575.png", 
-# name: "Wilsingham Academy", 
-# year_established: 2019, 
-# about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tortor pulvinar, elementum ante facilisis, posuere lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed semper, nibh euismod elementum egestas, quam enim finibus libero, eu ornare leo sapien id urna. Ut semper viverra tincidunt. Pellentesque porta ex porttitor, imperdiet odio facilisis, sodales erat. Etiam tortor ligula, facilisis at elit vel, pretium gravida ligula. Quisque tincidunt dui non fringilla blandit. Cras pellentesque mi id varius lacinia. Duis eget risus finibus, bibendum est sed, fringilla nisi. Praesent in commodo nibh, non viverra nunc. Duis ut tellus in lorem tincidunt vulputate vitae a leo. Nullam bibendum cursus nulla, at viverra mi imperdiet in. Vestibulum id magna commodo, vulputate dolor ut, sodales arcu. Etiam mollis non velit eget pharetra. Maecenas dignissim, lacus eu pellentesque consectetur, nunc risus gravida ante, vitae tempor lectus dui at ipsum. Nam molestie tellus ipsum, sed eleifend ante sagittis a.", 
-# address: "3010  36TH ST FARGO ND 58103-6291 USA",
-# contact: 756454763, 
-# user_id: 7)
+Mr Mandela was South Africas first democratically elected President. On 9 May 1994, soon after our landmark election results were in, he was unanimously elected President by South Africas new Members of Parliament.
 
-# organization4=Organization.create(image_url: "https://houchens.com/wp-content/uploads/2021/07/ckc-2.jpg", 
-# name: "Royal Seed International", 
-# year_established: 2018, 
-# about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tortor pulvinar, elementum ante facilisis, posuere lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed semper, nibh euismod elementum egestas, quam enim finibus libero, eu ornare leo sapien id urna. Ut semper viverra tincidunt. Pellentesque porta ex porttitor, imperdiet odio facilisis, sodales erat. Etiam tortor ligula, facilisis at elit vel, pretium gravida ligula. Quisque tincidunt dui non fringilla blandit. Cras pellentesque mi id varius lacinia. Duis eget risus finibus, bibendum est sed, fringilla nisi. Praesent in commodo nibh, non viverra nunc. Duis ut tellus in lorem tincidunt vulputate vitae a leo. Nullam bibendum cursus nulla, at viverra mi imperdiet in. Vestibulum id magna commodo, vulputate dolor ut, sodales arcu. Etiam mollis non velit eget pharetra. Maecenas dignissim, lacus eu pellentesque consectetur, nunc risus gravida ante, vitae tempor lectus dui at ipsum. Nam molestie tellus ipsum, sed eleifend ante sagittis a.", 
-# address: "501  6TH ST HANKINSON ND 58041-4223 USA",
-# contact: 0217777564, 
-# user_id: 5)
+The next day, Nelson Rolihlahla Mandela was sworn in at an inauguration ceremony at the Union Buildings in Pretoria.",
+contact: "+27 (0)11 547 5600",
+user_id:10
+)
 
-# organization5=Organization.create(
-# image_url: "https://yuva.info/wp-content/uploads/2022/05/pexels-photo-9090746.jpeg", 
-# name: "Africa Rising", 
-# year_established: 2020, 
-# about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tortor pulvinar, elementum ante facilisis, posuere lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed semper, nibh euismod elementum egestas, quam enim finibus libero, eu ornare leo sapien id urna. Ut semper viverra tincidunt. Pellentesque porta ex porttitor, imperdiet odio facilisis, sodales erat. Etiam tortor ligula, facilisis at elit vel, pretium gravida ligula. Quisque tincidunt dui non fringilla blandit. Cras pellentesque mi id varius lacinia. Duis eget risus finibus, bibendum est sed, fringilla nisi. Praesent in commodo nibh, non viverra nunc. Duis ut tellus in lorem tincidunt vulputate vitae a leo. Nullam bibendum cursus nulla, at viverra mi imperdiet in. Vestibulum id magna commodo, vulputate dolor ut, sodales arcu. Etiam mollis non velit eget pharetra. Maecenas dignissim, lacus eu pellentesque consectetur, nunc risus gravida ante, vitae tempor lectus dui at ipsum. Nam molestie tellus ipsum, sed eleifend ante sagittis a.", 
-# address: "1072 DIAMOND ST SAN DIEGO CA 92109-2674 USA",
-# contact: 0217777564, 
-# user_id: 5)
+organization1=Organization.create(
+name: "ALIMA (The Alliance for International Medical Action)",
+description: "ALIMAs purpose is to save lives and to care for the most at-risk populations, without any discrimination based on identity, religion or political affiliation. Our actions rely on proximity, innovation, and the alliance of organizations and individuals.
 
-# organization6=Organization.create(
-# image_url: "https://ministrywatch.com/wp-content/uploads/2022/12/pexels-givingtuesday-9826021-scaled.jpg", 
-# name: "Giving Tuesday", 
-# year_established: 2023, 
-# about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tortor pulvinar, elementum ante facilisis, posuere lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed semper, nibh euismod elementum egestas, quam enim finibus libero, eu ornare leo sapien id urna. Ut semper viverra tincidunt. Pellentesque porta ex porttitor, imperdiet odio facilisis, sodales erat. Etiam tortor ligula, facilisis at elit vel, pretium gravida ligula. Quisque tincidunt dui non fringilla blandit. Cras pellentesque mi id varius lacinia. Duis eget risus finibus, bibendum est sed, fringilla nisi. Praesent in commodo nibh, non viverra nunc. Duis ut tellus in lorem tincidunt vulputate vitae a leo. Nullam bibendum cursus nulla, at viverra mi imperdiet in. Vestibulum id magna commodo, vulputate dolor ut, sodales arcu. Etiam mollis non velit eget pharetra. Maecenas dignissim, lacus eu pellentesque consectetur, nunc risus gravida ante, vitae tempor lectus dui at ipsum. Nam molestie tellus ipsum, sed eleifend ante sagittis a.", 
-# address: "2715  WEBB AVE BRONX NY 10468-3236 USA",
-# contact: 19876543, 
-# user_id: 7)
+We act with humanism, impartiality and with the respect of universal medical ethics.",
+location: "Dakar , senegal",
+year_established: 2003,
+image_url: "https://www.chinadailyhk.com/attachments/image/242/231/76/670472_349579/670472_349579_800_auto_jpg.jpg",
+video_url: "https://www.youtube.com/embed/WO-Sqx0W_Bw",
+info: "The story of ALIMA began in 2009 in Niger. While the entire medical profession witnessed an alarming peak in acute malnutrition and increasing infant mortality rates, the health structures for managing malnutrition  were becoming increasingly rare.
 
-# organization7=Organization.create(
-# image_url: "https://dekalbccf.org/wp-content/uploads/2023/02/GDC-2023_web_Header-960x400.jpg", 
-# name: "Giving Dekab County", 
-# year_established: 2021, 
-# about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tortor pulvinar, elementum ante facilisis, posuere lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed semper, nibh euismod elementum egestas, quam enim finibus libero, eu ornare leo sapien id urna. Ut semper viverra tincidunt. Pellentesque porta ex porttitor, imperdiet odio facilisis, sodales erat. Etiam tortor ligula, facilisis at elit vel, pretium gravida ligula. Quisque tincidunt dui non fringilla blandit. Cras pellentesque mi id varius lacinia. Duis eget risus finibus, bibendum est sed, fringilla nisi. Praesent in commodo nibh, non viverra nunc. Duis ut tellus in lorem tincidunt vulputate vitae a leo. Nullam bibendum cursus nulla, at viverra mi imperdiet in. Vestibulum id magna commodo, vulputate dolor ut, sodales arcu. Etiam mollis non velit eget pharetra. Maecenas dignissim, lacus eu pellentesque consectetur, nunc risus gravida ante, vitae tempor lectus dui at ipsum. Nam molestie tellus ipsum, sed eleifend ante sagittis a.", 
-# address: "400 COUNTY ROAD 3924 ARLEY AL 35541-2445 USA",
-# contact: 19876543, 
-# user_id: 7)
+In 2008, a year before ALIMA founding, many international humanitarian organizations had been expelled from the country. Local groups were the only ones left to act, but they lacked resources. A new model of humanitarian assistance was clearly needed: an African medical alliance connecting national NGOs and international research institutes..",
+contact: " 831 620 398",
+user_id:13
+)
 
-# organization8=Organization.create(
-# image_url: "https://www.feedingahc.org/wp-content/uploads/2022/05/pexels-givingtuesday-9826015-2048x1365-1-1024x683.jpeg", 
-# name: "Chairity Wagon", 
-# year_established: 2023, 
-# about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tortor pulvinar, elementum ante facilisis, posuere lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed semper, nibh euismod elementum egestas, quam enim finibus libero, eu ornare leo sapien id urna. Ut semper viverra tincidunt. Pellentesque porta ex porttitor, imperdiet odio facilisis, sodales erat. Etiam tortor ligula, facilisis at elit vel, pretium gravida ligula. Quisque tincidunt dui non fringilla blandit. Cras pellentesque mi id varius lacinia. Duis eget risus finibus, bibendum est sed, fringilla nisi. Praesent in commodo nibh, non viverra nunc. Duis ut tellus in lorem tincidunt vulputate vitae a leo. Nullam bibendum cursus nulla, at viverra mi imperdiet in. Vestibulum id magna commodo, vulputate dolor ut, sodales arcu. Etiam mollis non velit eget pharetra. Maecenas dignissim, lacus eu pellentesque consectetur, nunc risus gravida ante, vitae tempor lectus dui at ipsum. Nam molestie tellus ipsum, sed eleifend ante sagittis a.", 
-# address: "400 COUNTY ROAD 3924 ARLEY AL 35541-2445 USA",
-# contact: 76576543, 
-# user_id: 5)
+organization1=Organization.create(
+name: "Wellbeing Foundation",
+description: "The Wellbeing Foundation Africa (WBFA) is a non-governmental organization, founded in 2004, by Her Excellency, Mrs Toyin Ojora-Saraki, with the aim of improving health outcomes for women, infants and children. The Foundation combines its programmes with advocacy in Nigeria and around the world to provide robust support for its primary stakeholders from birth to age.",
+location: "lagos , Nigeria",
+year_established: 2004,
+image_url: "https://wbfafrica.org/sites/default/files//slideIMG_24702.jpg",
+video_url: "https://www.youtube.com/embed/6hHjUG_New8",
+info: "The prioritisation of global impact, in alignment with the United Nations Sustainable Development Goals (SDG), informs the following three objectives of the Wellbeing Group towards measurable and meaningful outcomes.
 
-# organization9=Organization.create(
-# image_url: "https://img.freepik.com/free-photo/group-people-volunteering-foodbank-poor-people_23-2149012197.jpg", 
-# name: "Feeding the Future", 
-# year_established: 2023, 
-# about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tortor pulvinar, elementum ante facilisis, posuere lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed semper, nibh euismod elementum egestas, quam enim finibus libero, eu ornare leo sapien id urna. Ut semper viverra tincidunt. Pellentesque porta ex porttitor, imperdiet odio facilisis, sodales erat. Etiam tortor ligula, facilisis at elit vel, pretium gravida ligula. Quisque tincidunt dui non fringilla blandit. Cras pellentesque mi id varius lacinia. Duis eget risus finibus, bibendum est sed, fringilla nisi. Praesent in commodo nibh, non viverra nunc. Duis ut tellus in lorem tincidunt vulputate vitae a leo. Nullam bibendum cursus nulla, at viverra mi imperdiet in. Vestibulum id magna commodo, vulputate dolor ut, sodales arcu. Etiam mollis non velit eget pharetra. Maecenas dignissim, lacus eu pellentesque consectetur, nunc risus gravida ante, vitae tempor lectus dui at ipsum. Nam molestie tellus ipsum, sed eleifend ante sagittis a.", 
-# address: "2715  WEBB AVE BRONX NY 10468-3236 USA",
-# contact: 57654377, 
-# user_id: 7)
+Empowering and educating front line community health workers, including midwives and nurses.
+Increasing accessibility of sustainable maternal, new-born, infant, child and adolescent continuum of care through a lifetime of healthy habits from reproductive health education and family planning, to improved water sanitation and handwashing (WASH) behaviours.",
+contact: " +564907098",
+user_id:14
+)
+
+organization1=Organization.create(
+name: "Foundation for African Medicine & Education (FAME) (TANZANIA)",
+description: "FAME is an organization entirely focused on advancing quality medical care in rural Tanzania. From the beginning, we set out to provide communities in the Northern Highlands of Tanzania with a unique healthcare experience one marked by patient-centered care and high-quality service. In that spirit, FAME endeavors to meet the medical needs of ordinary Tanzanian people, including underserved populations in the most rural parts of the region.",
+location: "Dodoma , Tanzania",
+year_established: 2010,
+image_url: "https://blog.africadreamsafaris.com/",
+video_url: "https://www.youtube.com/embed/hXVoLFwQvLE",
+info: "IN ADDITION TO PROVIDING COMPREHENSIVE PRIMARY CARE IN OUR OUTPATIENT CLINIC AND INPATIENT HOSPITAL, FAME PROVIDES SERVICES IN SURGERY, MATERNAL & CHILD HEALTH, DIAGNOSTICS, COMMUNITY OUTREACH, AND EDUCATION & CAPACITY BUILDING.",
+contact: " +255 769 996 888",
+user_id:16
+)
+organization1=Organization.create(
+name: "Foundation for African Medicine & Education (FAME) (TANZANIA)",
+description: "FAME is an organization entirely focused on advancing quality medical care in rural Tanzania. From the beginning, we set out to provide communities in the Northern Highlands of Tanzania with a unique healthcare experience one marked by patient-centered care and high-quality service. In that spirit, FAME endeavors to meet the medical needs of ordinary Tanzanian people, including underserved populations in the most rural parts of the region.",
+location: "Dodoma , Tanzania",
+year_established: 2010,
+image_url: "https://blog.africadreamsafaris.com/",
+video_url: "https://www.youtube.com/embed/hXVoLFwQvLE",
+info: "IN ADDITION TO PROVIDING COMPREHENSIVE PRIMARY CARE IN OUR OUTPATIENT CLINIC AND INPATIENT HOSPITAL, FAME PROVIDES SERVICES IN SURGERY, MATERNAL & CHILD HEALTH, DIAGNOSTICS, COMMUNITY OUTREACH, AND EDUCATION & CAPACITY BUILDING.",
+contact: " +255 769 996 888",
+user_id:16
+)
 
 
 
 #Create 8 random donations 
 donation1=Donation.create(contribution_amount: 960000, organization_id: 5, user_id: 2)
-#  donation2=Donation.create(contribution_amount:"$80,000", organization_id: 2, user_id: 4)
-# donation3=Donation.create(contribution_amount:"$630,000", organization_id: 3, user_id: 8)
-#  donation4=Donation.create(contribution_amount:"$960,000", organization_id: 5, user_id: 1)
-# donation5=Donation.create(contribution_amount:"$60,000", organization_id: 4, user_id: 6)
-# donation6=Donation.create(contribution_amount:"$110,000", organization_id: 5, user_id: 3)
-# donation7=Donation.create(contribution_amount:"$420,000", organization_id: 4, user_id: 10)
-#  donation8=Donation.create(contribution_amount:"$90,000", organization_id: 3, user_id: 9)
+donation2=Donation.create(contribution_amount:"$80,000", organization_id: 2, user_id: 4)
+donation3=Donation.create(contribution_amount:"$630,000", organization_id: 3, user_id: 8)
+donation4=Donation.create(contribution_amount:"$960,000", organization_id: 5, user_id: 1)
+donation5=Donation.create(contribution_amount:"$60,000", organization_id: 4, user_id: 6)
+donation6=Donation.create(contribution_amount:"$110,000", organization_id: 5, user_id: 3)
+donation7=Donation.create(contribution_amount:"$420,000", organization_id: 4, user_id: 10)
+donation8=Donation.create(contribution_amount:"$90,000", organization_id: 3, user_id: 9)
 
 #Create 12 random reviews 
 

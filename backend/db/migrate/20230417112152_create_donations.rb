@@ -4,6 +4,7 @@ class CreateDonations < ActiveRecord::Migration[7.0]
       t.integer :contribution_amount
       t.integer :organization_id
       t.integer :user_id
+      
 
       t.timestamps
     end
