@@ -56,7 +56,7 @@ function HomePage() {
                     </p>
                   )}
                   {ngos.length > 0 && (
-                    <p className="text-4xl font-serif mt-">
+                    <p className="text-4xl tec font-serif mt-">
                       {ngos[0].name}
                     </p>
                   )}
@@ -343,8 +343,9 @@ function HomePage() {
 
             <div className="text-center mt-8 ml-32 mx-auto justify-center">
               {" "}
+              <Link to="/Organization">
               <button className="bg-green-600 w-32 h-11 text-white text-bold hover:bg-green-800"> Impact Hub
- </button>
+ </button></Link>
             </div>
           </div>
 
