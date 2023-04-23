@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from "./Images/logo.png"
 
 function NavBar() {
   return (
@@ -9,6 +10,8 @@ function NavBar() {
         <div class="container mx-auto flex flex-wrap items-center justify-between px-4 py-3">
             <a href="#" class="flex items-center text-white">  
         
+                <img src={logo}
+                 alt="Logo" class="h-12 w-12 mr-5 hover:scale-150" />
                 <span class="text-lg font-semibold whitespace-nowrap">Rising Together</span>
             </a>
             <button data-collapse-toggle="mobile-menu" type="button" className="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center" aria-controls="mobile-menu-2" aria-expanded="false">
