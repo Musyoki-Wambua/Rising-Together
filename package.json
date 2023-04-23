@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "bootstrap": "^5.2.3"
   }
 }
