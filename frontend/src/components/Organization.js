@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Organization = () => {
   const [organization, setOrganization] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [Loading, setIsLoading] = useState(true);
   useEffect(() => {
     fetch("https://api.jsonbin.io/v3/b/643c58ecace6f33a220c83d1/latest")
       .then((response) => response.json())
@@ -18,7 +18,7 @@ const Organization = () => {
       });
   }, []);
 
-  if (isLoading) {
+  if (Loading) {
     return (
       <body class="w-full h-full bg-gray-900 text-white grid grid-cols-1 grid-rows-1 place-items-center">
         <svg
@@ -91,7 +91,7 @@ const Organization = () => {
   return (
     <div className="mt-8 grid grid-cols-2 gap-4">
   {organization.map((org, index) => (
-    <div className="cursor-pointer rounded-md p-3 bg-white  " key={index}>
+    <div className="cursor-pointer rounded-md p-3 bg-white" key={index}>
       <OrganizationCard organization={org} id={index}/>
     </div>
   ))}
