@@ -4,10 +4,10 @@ import { useParams } from "react-router-dom";
 function OrganizationDetails() {
   let param = useParams();
   console.log(param.id);
-  const [randomNumber, setRandomNumber] = useState(
+  const [randomNumber ] = useState(
     Math.floor(Math.random() * 100) + 1
   );
-  const [randomNumber2, setRandomNumber2] = useState(
+  const [randomNumber2] = useState(
     Math.floor(Math.random() * 18) + 2006
   );
   const [isLoading, setIsLoading] = useState(true);
