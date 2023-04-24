@@ -52,8 +52,8 @@ const DonationForm = () => {
   };
 
   return(
-    <div className="flex items-center justify-center h-screen">
-    <div className=" rounded px-8 py-6">
+    <div className="flex items-center justify-center bg-gray-200 h-screen">
+    <div className=" rounded px-8 py-6 ">
       <h2 className="text-xl flex items-center justify-center font-bold mb-2">Make a Donation </h2>
       <p className="text-indent: 0.125rem; mb-2">Donate now! Support our mission to connect people to quality giving and volunteer opportunities worldwide!</p>
       <div className="container mx-auto px-4 py-8">
@@ -216,7 +216,7 @@ const DonationForm = () => {
           <div className="mb-6">
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              onClick={handleSubmit}>
+              onClick={handleSubmit} >
               Donate Now
             </button>
           </div>

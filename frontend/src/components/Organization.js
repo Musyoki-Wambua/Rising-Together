@@ -48,35 +48,35 @@ const Organization = () => {
                
               className="mt- h-full w-full  group relative block bg-black"
             >
-              {organization.image_url.length > 0 && (
+               
                 <img
                   alt="Developer"
                   src={organization.image_url}
                   
                   className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
-              )}
+              
 
               <div className=" relative p-4 sm:p-6 lg:p-8">
                 <div className="text-white translate-y-11  mt-96  transition-all group-hover:translate-y-0 group-hover:opacity-100  ">
                   <p className="text-gray-600  text-sm">.</p>
-                  {organization.location.length > 0 && (
+                   
                     <p className="text-gray-400  text- mt-14">
                       {organization.location}
                     </p>
-                  )}
-                  {organization.name.length > 0 && (
+                   
+                   
                     <p className="text-4xl font-serif mt-">
                       {organization.name}
                     </p>
-                  )}
+                  
                   <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                   
-        <Link to={`/organizationDetails/${organization.id}`}>
+        
           <button className="bg-green-700 w-full h-8 text-xl text-white">
             Donate
           </button>
-        </Link>
+         
        
                   </div>
                 </div>

@@ -27,7 +27,7 @@ function LandingPage() {
       </div>
          <div className="flex mt-32">
          <Link to="/login">  <button className="text-gray-700 px-4 py-2  hover:bg-yellow-500 bg-yellow-600">Give now</button></Link>
-            <div className="bg-green-700 ml-14  text-white px-4 py-2  hover:bg-green-600"> <Link to="/signup">   <button className="">Become a Volunteer</button></Link>
+            <div className="bg-green-700 ml-14  text-white px-4 py-2  hover:bg-green-600"> <Link to="/SignupPage">   <button className="">Become a Volunteer</button></Link>
         </div>
            </div>
       </div>

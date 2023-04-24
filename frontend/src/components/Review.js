@@ -11,7 +11,7 @@ const Review = ({ rating, description }) => {
 
   return (
     <form onSubmit={handleSubmit} >
-      <div className="mb-4 w-1/2 mx-auto">
+      <div className="mb-4   mx-auto">
         <label
           htmlFor="review"
           className="block text-gray-700 font-bold mb-2"
@@ -30,7 +30,7 @@ const Review = ({ rating, description }) => {
       <div className="text-center">
         <button
           type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="bg-green-700 hover:bg-green-800 font-serif text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
           Submit
         </button>

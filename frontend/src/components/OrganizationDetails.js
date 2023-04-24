@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import DonationForm from "./DonationForm";
+import Review from "./Review";
+import Profile from "./Profile";
 function OrganizationDetails() {
   let param = useParams();
   console.log(param.id);
-  const [randomNumber ] = useState(
-    Math.floor(Math.random() * 100) + 1
-  );
-  const [randomNumber2] = useState(
-    Math.floor(Math.random() * 18) + 2006
-  );
-  const [isLoading, setIsLoading] = useState(true);
+  const [randomNumber] = useState(Math.floor(Math.random() * 100) + 1);
+  const [randomNumber2] = useState(Math.floor(Math.random() * 18) + 2006);
+
   const [organization, setOrganization] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     fetch("https://api.jsonbin.io/v3/b/643c58ecace6f33a220c83d1/latest")
-      .then((res) => {
-        return res.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
+        console.log(data.record.name);
+
         setOrganization(data.record);
         setIsLoading(false);
       });
@@ -46,8 +45,34 @@ function OrganizationDetails() {
   //  src={organization.image_url}
 
   const DetailedOrganization = ({ organization }) => {
+    const handleButtonClick = () => {
+      setIsCardVisible(!isCardVisible);
+    };
+    const [isCardVisible, setIsCardVisible] = useState(false);
+    
+    const Card = () => {
+      return (
+        <div>
+          <div className="fixed top-0 left-0  bg-black opacity-50 z-10"></div>
+          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-xl   z-20 p-4">
+            <DonationForm />
+          </div>
+        </div>
+      );
+    };
+    const Volunteer =()=>{
+      return (
+        <div>
+          <div className="fixed top-0 left-0  bg-black opacity-50 z-10"></div>
+          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-xl   z-20 p-4"> 
+        <Profile/>
+        </div>
+        </div>
+      )
+    }
     return (
       <div className="detailed-page ">
+        {/* <DonationForm/> */}
         <div className="bg-green-50 ">
           <div className="mt- mx-auto  p-4 flex   ">
             <div className="grid grid-cols-2 ">
@@ -61,10 +86,13 @@ function OrganizationDetails() {
 
                 <div className=" mt-8 ml-32 mx-auto justify-center">
                   {" "}
-                  <button className="bg-green-800 w-32 h-11 text-white text-bold hover:bg-green-700 font-sarif">
-                    {" "}
+                  <button
+                    className="bg-green-800 w-32 h-11 text-white text-bold hover:bg-green-700 font-sarif"
+                    onClick={handleButtonClick}
+                  >
                     Give Now
                   </button>
+                  {isCardVisible && <Card />}
                 </div>
               </div>
 
@@ -103,6 +131,9 @@ function OrganizationDetails() {
                   Who We Are and How We Define Ourselves{" "}
                 </h1>
                 <p className=" mt-9 text-xl font-serif ">{organization.info}</p>
+                <div className="w-full h-full mt-9 ">
+                  <Review />
+                </div>
               </div>
             </div>
           </div>
@@ -119,15 +150,20 @@ function OrganizationDetails() {
                   {randomNumber2}
                 </h1>
                 <p className=" font-serif ml-24  mt-6 text-xl ">
-                  {organization.description}
+                  Join our mission to make a positive impact! Volunteer with us
+                  and help make a difference in the lives of those in need.
+                  Whether you have a few hours to spare or are looking for a
+                  more long-term commitment, we have opportunities available for
+                  everyone. Sign up today and be a part of something meaningful.
                 </p>
 
                 <div className=" mt-8 ml-24 mx-auto justify-center">
                   {" "}
-                  <button className="bg-green-800 w-32 h-11 text-white text-bold hover:bg-green-700 font-sarif">
+                  <button className="bg-green-800 w-32 h-11 text-white text-bold hover:bg-green-700 font-sarif"  onClick={handleButtonClick}>
                     {" "}
-                    Give Now
+                    VOLUNTEER
                   </button>
+                  {isCardVisible && <Volunteer />}
                 </div>
               </div>
 
