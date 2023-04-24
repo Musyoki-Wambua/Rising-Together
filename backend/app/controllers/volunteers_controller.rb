@@ -4,7 +4,6 @@ class VolunteersController < ApplicationController
     #GET/ volunteers
     def index
         render json: Volunteer.all
-        
     end
 # GET/volunteers/:id
     def show
@@ -26,6 +25,7 @@ class VolunteersController < ApplicationController
             render json: {errors: "volunteer.errors.full_messages"}, status: :unprocessable_entity
         end
     end
+    
 
     #DELETE/ volunteers/:id
     def destroy
