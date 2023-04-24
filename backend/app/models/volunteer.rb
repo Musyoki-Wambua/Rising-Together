@@ -1,4 +1,4 @@
 class Volunteer < ApplicationRecord
-    belongs_to: user
-    belongs_to: orgnization
+    belongs_to :user
+    belongs_to :organization
 end
