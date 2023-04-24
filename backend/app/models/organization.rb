@@ -6,5 +6,6 @@ class Organization < ApplicationRecord
     has_many :reviews
     has_many :users, through: :volunteers 
 
-    # validates :image_url, format: { with: /\.(jpeg|jpg)\z/i, message: "must be in JPEG format" }
+    #Validations 
+    validates :image_url, format: { with: /\.(jpeg|jpg)\z/i, message: "must be in JPEG format" }
 end
