@@ -32,4 +32,8 @@ class ReviewsController < ApplicationController
         params.require(:review).permit(:rating, :comments, :user_id, :organization_id, :organization_name, :username)
       end
 
+
+
+      
+
 end
