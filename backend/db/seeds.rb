@@ -212,6 +212,7 @@ donation10=Donation.create(contributed_amount:"$80,000", organization_id: 2, use
 donation11=Donation.create(contributed_amount:"$630,000", organization_id: 3, user_id: 9, username: "Manu")
 donation12=Donation.create(contributed_amount:"$630,000", organization_id: 3, user_id: 4, username: "Lona")
 donation13=Donation.create(contributed_amount:"$80,000", organization_id: 2, user_id: 7, username: "Jane")
+donation14=Donation.create(contributed_amount:"$960,000", organization_id: 7, user_id: 2, username: "Mike")
 
 
 
