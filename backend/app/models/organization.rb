@@ -1,5 +1,4 @@
 class Organization < ApplicationRecord
-
     belongs_to :user 
     has_many :donations 
     has_many :volunteers 
@@ -9,3 +8,4 @@ class Organization < ApplicationRecord
     #Validations 
     validates :image_url, format: { with: /\.(jpeg|jpg)\z/i, message: "must be in JPEG format" }
 end
+
