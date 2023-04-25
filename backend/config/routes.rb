@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
+  mount Rswag::Api::Engine => '/api-docs'
+
   resources :volunteers
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
   # root "articles#index"
   # Rails.application.routes.draw do
+
+  # mount Rswag::Ui::Engine => '/api-docs'
+  # mount Rswag::Api::Engine => '/api-docs'
     # post '/reviews', to: 'reviews#create'
     #  put '/reviews/:id', to: 'reviews#update'
     #  delete '/reviews/:id', to: 'reviews#destroy'
@@ -14,8 +19,8 @@ Rails.application.routes.draw do
      resources :reviews
      resources :donations
      resources :organizations
-     resources :user,only: [:index, :create, :destroy]
-     resources :profile, expects: [:index]
+     resources :users ,only: [:index, :create, :destroy]
+     resources :profiles, expects: [:index]
 
 
     # post '/donations', to: 'donations#create'
