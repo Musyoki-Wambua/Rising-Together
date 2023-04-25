@@ -88,9 +88,10 @@ function NavBar() {
                   href="#"
                   className="text-white hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300"
                 >
-                  Pages{" "}
+                 Organizations{" "}
                 </a>
               </li>
+
 
               <li>
                 <button className="bg-green-300 hover:bg-magenta-300 text-white py-2 block px-4 rounded-lg">
