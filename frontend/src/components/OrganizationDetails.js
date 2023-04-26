@@ -12,12 +12,12 @@ function OrganizationDetails() {
   const [organization, setOrganization] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch("https://api.jsonbin.io/v3/b/643c58ecace6f33a220c83d1/latest")
+    fetch(" http://localhost:3000/organizations")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.record.name);
+        console.log(data.name);
 
-        setOrganization(data.record);
+        setOrganization(data);
         setIsLoading(false);
       });
   }, []);
@@ -159,11 +159,12 @@ function OrganizationDetails() {
 
                 <div className=" mt-8 ml-24 mx-auto justify-center">
                   {" "}
-                  <button className="bg-green-800 w-32 h-11 text-white text-bold hover:bg-green-700 font-sarif"  onClick={handleButtonClick}>
+                  <button className="bg-green-800 w-32 h-11 text-white text-bold hover:bg-green-700 font-sarif"  >
                     {" "}
+                    {/* onClick={handleButtonClick} */}
                     VOLUNTEER
                   </button>
-                  {isCardVisible && <Volunteer />}
+                  {/* {isCardVisible && <Volunteer />} */}
                 </div>
               </div>
 

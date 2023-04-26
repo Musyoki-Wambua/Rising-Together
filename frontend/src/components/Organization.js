@@ -1,22 +1,34 @@
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
- 
-
+import { useLocation } from "react-router-dom";
 
 const Organization = () => {
   const [organization, setOrganization] = useState([]);
   const [Loading, setIsLoading] = useState(true);
+  const [organizations, setOrganizations] = useState();
+
   useEffect(() => {
-    fetch("https://api.jsonbin.io/v3/b/643c58ecace6f33a220c83d1/latest")
+    fetch(`http://localhost:3000/organizations`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.record.name );
-         
-        setOrganization(data.record);
+        console.log(data.name);
+        setOrganization(data);
         setIsLoading(false);
       });
   }, []);
+
+  const handleDelete = (id) => {
+    fetch(`http://localhost:3000/organizations/${id}`, { method: "DELETE" })
+      .then(() => {
+        if (organizations) {
+          const updateOrganizations = organizations.filter(
+            (organization) => organization.id !== id
+          );
+          setOrganizations(updateOrganizations);
+        }
+      })
+      .catch((error) => console.error(error));
+  };
 
   if (Loading) {
     return (
@@ -38,66 +50,75 @@ const Organization = () => {
       </body>
     );
   }
+  function AdminButton({ id }) {
+    const location = useLocation();
+    const role = new URLSearchParams(location.search).get("role");
 
-  const OrganizationCard = ({ organization, id}) => {
-    return (<Link to={`/organizationDetails/${id}`}>
+    if (role === "admin") {
+      return <button>Delete</button>;
+    } else {
+      return null;
+    }
+  }
+
+  const OrganizationCard = ({ organization, id }) => {
+    return (
       <div className="mt-6 w-full   md:w-full h-full p-">
-          <div className=" ">
-            <a
-              href="#"
-               
-              className="mt- h-full w-full  group relative block bg-black"
-            >
-               
-                <img
-                  alt="Developer"
-                  src={organization.image_url}
-                  
-                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-                />
-              
+        <div className=" ">
+          <a
+            href="#"
+            className="mt- h-full w-full  group relative block bg-black"
+          >
+            <img
+              alt="Developer"
+              src={organization.image_url}
+              className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+            />
 
-              <div className=" relative p-4 sm:p-6 lg:p-8">
-                <div className="text-white translate-y-11  mt-96  transition-all group-hover:translate-y-0 group-hover:opacity-100  ">
-                  <p className="text-gray-600  text-sm">.</p>
-                   
-                    <p className="text-gray-400  text- mt-14">
-                      {organization.location}
-                    </p>
-                   
-                   
-                    <p className="text-4xl font-serif mt-">
-                      {organization.name}
-                    </p>
-                  
-                  <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                  
-        
-          <button className="bg-green-700 w-full h-8 text-xl text-white">
-            Donate
-          </button>
-         
-       
-                  </div>
+            <div className=" relative p-4 sm:p-6 lg:p-8">
+              <div className="text-white translate-y-11  mt-96  transition-all group-hover:translate-y-0 group-hover:opacity-100  ">
+                <p className="text-gray-600  text-sm">.</p>
+
+                <p className="text-gray-400  text- mt-14">
+                  {organization.location}
+                </p>
+
+                <p className="text-4xl font-serif mt-">{organization.name}</p>
+
+                <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                  <Link to={`/organizationDetails/${id}`}>
+                    <button className="bg-green-700 w-full h-8 text-xl text-white">
+                      Donate
+                    </button>
+                  </Link>
+                </div>
+                <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                  <button
+                    className="bg-red-700 w-full h-8 text-xl text-white"
+                    onClick={() => handleDelete(organization.id)}
+                  >
+                    {" "}
+                    <AdminButton
+                      onClick={() => handleDelete(organization.id)}
+                    />
+                  </button>
+                  {/* <AdminButton onClick={() => handleDelete(organization.id)} /> */}
                 </div>
               </div>
-            </a>{" "}
-          </div>
-        </div>   
-       
-      </Link>
+            </div>
+          </a>{" "}
+        </div>
+      </div>
     );
   };
   return (
     <div className="mt-8 grid grid-cols-2 gap-4">
-  {organization.map((org, index) => (
-    <div className="cursor-pointer rounded-md p-3 bg-white" key={index}>
-      <OrganizationCard organization={org} id={index}/>
+      {organization.map((org, index) => (
+        <div className="cursor-pointer rounded-md p-3 bg-white" key={index}>
+          <OrganizationCard organization={org} id={index} />
+        </div>
+      ))}
     </div>
-  ))}
-</div>
-
   );
 };
 export default Organization;
-
