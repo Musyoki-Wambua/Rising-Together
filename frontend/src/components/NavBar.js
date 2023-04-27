@@ -99,7 +99,7 @@ function NavBar() {
                 </a>
                 </Link>
               </li>
-              <Link to="/login">
+              <Link to="/">
               <li>
                 <a
                   href="#"
