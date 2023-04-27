@@ -1,9 +1,10 @@
 import React from "react";
-
+import NavBar from "./NavBar";
 
 const WhoWeAre = () => {
   return (
     <section className="bg-gray-100 font-serif">
+      <NavBar/>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-3xl mx-auto text-center pb-12">
           <h2 className="text-3xl font-bold text-gray-800">Who We Are</h2>

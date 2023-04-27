@@ -37,14 +37,17 @@ function Login() {
   };
 
   return (
+
     <section
       style={{ backgroundColor: "#0E503F" }}
-      className="flex items-center justify-center min-h-screen"
+      
     >
+      <div className="flex flex-wrap items-center text-xl text-white"><img className="h-14 w-14 ml-20"src={require('./Images/logo.png')} alt="My Image" />Raising Together</div>
+      <div className="flex items-center justify-center min-h-screen">
       <div className="flex  w-2/4 h-4/5  p-6">
         <a
           href="#"
-          className="h-96 w-96 relative block overflow-hidden rounded-xl bg-[url(https://images.unsplash.com/photo-1515658323406-25d61c141a6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=709&q=80)] bg-cover bg-center bg-no-repeat"
+          className="h-96  w-96 relative block overflow-hidden rounded-xl bg-[url(https://images.unsplash.com/photo-1515658323406-25d61c141a6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=709&q=80)] bg-cover bg-center bg-no-repeat"
         >
           <div className="absolute inset-0 bg-black/25"></div>
 
@@ -112,6 +115,7 @@ function Login() {
             </button>
           </form>
         </div>
+      </div>
       </div>
     </section>
   );

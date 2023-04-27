@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./Images/logo.png";
-
+import { Link } from "react-router-dom";
+ 
 function NavBar() {
   return (
     <div className="mx-auto  bg-green-900">
@@ -48,21 +49,24 @@ function NavBar() {
           <div className="hidden md:block w-full md:w-auto" id="mobile-menu">
             <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
               <li>
-                <a
+               <Link to="/HomePage"> <a
                   href="#"
                   class="text-white font-bold px-3 py-2 rounded-md hover:bg-gray-700   hover:bg-firebrick transition-colors duration-300"
                 >
                   Home
                 </a>
+                </Link>
               </li>
 
               <li>
+                <Link to= "/WhoWeAre">
                 <a
                   href="#"
                   className="text-white hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300"
                 >
                   Who We Are
                 </a>
+                </Link>
               </li>
 
               <li>
@@ -75,29 +79,41 @@ function NavBar() {
               </li>
 
               <li>
+                <Link to="/Help">
                 <a
                   href="#"
                   className="text-white hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300"
                 >
-                  Our Campaigns
+                  Help
                 </a>
+                </Link>
               </li>
 
               <li>
+                <Link to ="/Organization">
                 <a
                   href="#"
                   className="text-white hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300"
                 >
                  Organizations{" "}
                 </a>
+                </Link>
               </li>
-
-
+              <Link to="/login">
               <li>
-                <button className="bg-green-300 hover:bg-magenta-300 text-white py-2 block px-4 rounded-lg">
-                  Donate Now
-                </button>
+                <a
+                  href="#"
+                  class="inline-flex items-center text-white hover:bg-green-700 bg-green-800 hover:text-white font-medium px-3 py-1 rounded-md transition-colors duration-300">
+	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+	  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+	</svg>
+
+	Logout
+                </a>
+            
               </li>
+              </Link>
+              
             </ul>
           </div>
         </div>

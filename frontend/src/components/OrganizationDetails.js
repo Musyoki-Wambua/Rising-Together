@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import DonationForm from "./DonationForm";
 import Review from "./Review";
 import Profile from "./Profile";
+import NavBar from "./NavBar";
 function OrganizationDetails() {
   let param = useParams();
   console.log(param.id);
@@ -183,6 +184,7 @@ function OrganizationDetails() {
   };
   return (
     <div>
+      <NavBar/>
       <DetailedOrganization organization={organization[param.id]} />
     </div>
   );

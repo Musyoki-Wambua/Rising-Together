@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import NavBar from "./NavBar";
 function HomePage() {
   const [ngos, setNGOs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -78,7 +79,7 @@ function HomePage() {
   }
   return (
     <section className="font-serif">
-      {/* <AdminButton /> */}
+      {/* <AdminButton /> */} <NavBar/>
       <div className="font-serif flex flex-wrap">
         <div className="mt-6 w-full  md:w-1/2 p-">
           <div className="h-52">
