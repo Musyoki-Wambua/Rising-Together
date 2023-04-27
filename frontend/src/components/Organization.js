@@ -55,7 +55,7 @@ const Organization = () => {
     const role = new URLSearchParams(location.search).get("role");
 
     if (role === "admin") {
-      return <button>Delete</button>;
+      return <button className="bg-green-700 w-full h-8 text-xl text-white">Delete</button>;
     } else {
       return null;
     }
@@ -94,7 +94,7 @@ const Organization = () => {
                 </div>
                 <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                   <button
-                    className="bg-red-700 w-full h-8 text-xl text-white"
+                    className=" text-xl text-red"
                     onClick={() => handleDelete(organization.id)}
                   >
                     {" "}
