@@ -1,4 +1,4 @@
-import { Button } from "bootstrap";
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -32,12 +32,8 @@ const Organization = () => {
   const handleDelete = (id) => {
     fetch(`http://localhost:3000/organizations/${id}`, { method: "DELETE" })
       .then(() => {
-        if (organizations) {
-          const updateOrganizations = organizations.filter(
-            (organization) => organization.id !== id
-          );
-          setOrganizations(updateOrganizations);
-        }
+        const updatedOrgs = organization.filter((org) => org.id !== id);
+        setOrganization(updatedOrgs);
       })
       .catch((error) => console.error(error));
   };
@@ -62,6 +58,27 @@ const Organization = () => {
       </body>
     );
   }
+
+  // function Donate( id) {
+  //   const location = useLocation();
+  //   const isUser = location.search.indexOf("role=admin") === -1;
+  //   const role = isUser ? "user" : "admin";
+
+  //   return (
+  //     <Link to={`/organizationDetails/${id}?role=${role}`}>
+  //       <button className="bg-green-600 w-32 h-11 text-white text-bold hover:bg-green-800">
+  //         {role === "admin" ? "Impact Hub " : "Impact Hub"}
+  //       </button>
+  //     </Link>
+  //   //   <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+  //   //   <Link to={`/organizationDetails/${id}`}>
+  //   //     <button className="bg-green-700 w-full h-8 text-xl text-white">
+  //   //       Donate
+  //   //     </button>
+  //   //   </Link>
+  //   // </div>
+  //   );
+  // }
   function AdminButton({ id }) {
     const location = useLocation();
     const role = new URLSearchParams(location.search).get("role");
@@ -124,57 +141,43 @@ const Organization = () => {
   }
    
 
-  const Search = () => {
-    const [organization, setOrganization] = useState([]);
-    const [searchTerm, setSearchTerm] = useState("");
-  
-    useEffect(() => {
-      fetch(`http://localhost:3000/organizations`)
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data.name);
-          setOrganization(data);
-        });
-    }, []);
-  
-    const handleSearch = (event) => {
-      setSearchTerm(event.target.value);
-    };
-  
-    const filteredOrganizations = organization.filter((org) =>
-      org.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  
-    const sortedOrganizations = [
-      ...filteredOrganizations.filter(
-        (org) => org.name.toLowerCase() === searchTerm.toLowerCase()
-      ),
-      ...filteredOrganizations.filter(
-        (org) => org.name.toLowerCase() !== searchTerm.toLowerCase()
-      ),
-    ];
-  
-    return (
-      <div>
-        <input
-          type="text"
-          placeholder="Search organization"
-          value={searchTerm}
-          onChange={handleSearch}
-        />
-        {sortedOrganizations.map((org) => (
-          <div key={org.id}>
-            <h2>{org.name}</h2>
-            <p>{org.description}</p>
-          </div>
-        ))}
-      </div>
-    );
-  };
+  function Editename({ id }) {
+    const location = useLocation();
+    const role = new URLSearchParams(location.search).get("role");
+
+    if (role === "admin") {
+      return (
+        <div>
+          <button class=" inline-flex items-center px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-md">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+              />
+            </svg>
+            Edite
+          </button>
+        </div>
+      );
+    } else {
+      return null;
+    }
+  }
   
   
   
   const OrganizationCard = ({ organization, id }) => {
+    const location = useLocation();
+    const isUser = location.search.indexOf("role=admin") === -1;
+    const role = isUser ? "user" : "admin";
     return (
       <div className="mt-6 w-full   md:w-full h-full p-">
         <div className=" ">
@@ -199,9 +202,9 @@ const Organization = () => {
                 <p className="text-4xl font-serif mt-">{organization.name}</p>
 
                 <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                  <Link to={`/organizationDetails/${id}`}>
+                  <Link to={`/organizationDetails/${id}?role=${role}`}>
                     <button className="bg-green-700 w-full h-8 text-xl text-white">
-                      Donate
+                      Donate 
                     </button>
                   </Link>
                 </div>
@@ -231,6 +234,7 @@ const Organization = () => {
   return (
     <div>
       <NavBar/>
+      
       <div className=" mt-4 w-full">
       <div className="flex items-center justify-center mb-5">
         <input
@@ -249,6 +253,7 @@ const Organization = () => {
         </div>
       ))}
     </div>
+    
     </div>
     </div>
   );
