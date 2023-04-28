@@ -23,10 +23,10 @@ jobs:
         run: |
           cd frontend 
           npm run build 
-#       - name: Test
-#         run: |
-#           cd frontend
-#           npm run test
+      - name: Test
+        run: |
+          cd frontend
+          npm run test
   
   rails: 
     name: Ruby on Rails 
@@ -55,18 +55,10 @@ jobs:
             bin/rails db:migrate 
           fi 
 
-<<<<<<< HEAD
-      - name: Test
-        run: |
-          cd backend
-          bin/rails test
-
-=======
-#       - name: Test 
-#         run: |
-#           cd backend
-#           bin/rails test 
->>>>>>> d2282b9ec57e2d27a08b7aa86650c94b33e01468
+      - name: Test 
+        run: | 
+        cd backend 
+        bin/rails test 
 
 
     

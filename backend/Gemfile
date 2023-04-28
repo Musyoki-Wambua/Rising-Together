@@ -9,8 +9,25 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
+gem "bcrypt"
+
+gem "rack-cors"
+
+gem "rswag"
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
+ 
+
+gem "bcrypt"
+
+gem 'rack-cors'
+
+gem 'cancancan', '~> 3.4'
+
+gem "faker"
+
+gem "active_model_serializers"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
@@ -21,6 +38,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'rspec-rails', '~> 6.0.0'
 end
 
 group :development do
