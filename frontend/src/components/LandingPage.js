@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
+
 function LandingPage() {
   return (
     <section style={{ backgroundColor: '#0E503F' }} className="min-h-screen bg-green-900">
@@ -124,6 +126,8 @@ function LandingPage() {
     </div>
   </div>
 </div>
+< Footer />
+
 
 
   </div>

@@ -230,7 +230,7 @@ const Organization = () => {
   };
   return (
     <div>
-      <NavBar/>
+      {/* <NavBar/> */}
       <div className=" mt-4 w-full">
       <div className="flex items-center justify-center mb-5">
         <input

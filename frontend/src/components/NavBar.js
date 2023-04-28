@@ -7,12 +7,12 @@ function NavBar() {
     <div className="mx-auto  bg-green-900">
       <nav className="border-gray-200">
         <div class="container mx-auto flex flex-wrap items-center justify-between px-4 py-3">
-          <a href="#" class="flex items-center text-white">
+          <Link to="/" href="#" class="flex items-center text-white">
             <img src={logo} alt="Logo" class="h-14 w-14     mr-5  " />
             <span class="text-lg font-semibold whitespace-nowrap">
               Rising Together
             </span>
-          </a>
+          </Link>
           <button
             data-collapse-toggle="mobile-menu"
             type="button"
@@ -90,7 +90,7 @@ function NavBar() {
               </li>
 
               <li>
-                <Link to ="/Organization">
+                <Link to ="/Organizations">
                 <a
                   href="#"
                   className="text-white hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300"
@@ -118,6 +118,7 @@ function NavBar() {
           </div>
         </div>
       </nav>
+      
     </div>
   );
 }
