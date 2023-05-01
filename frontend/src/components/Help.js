@@ -16,7 +16,7 @@ import search from "./Images/search.png";
 const Help = () => {
   return (
     <div className="bg-gray-200 min-h-screen">
-      <NavBar/>
+      {/* <NavBar/> */}
       <div className="mx-auto px-4 py-8 max-w-7xl">
         <h1 className="text-4xl font-bold text-center mt-8 mb-12">
           How to Use Our App

@@ -26,18 +26,20 @@ function App() {
         <Routes>        
         <Route path="/Insight" element={<Insight />} />  
           <Route path="/HomePage" element={<HomePage />} />
-          <Route path="/Organization" element={<Organization />} />        
+          <Route path="/Organizations" element={<Organization />} />        
           <Route path="/login" element={<Login />} />
+          <Route path="/WhoweAre" element={<WhoWeAre />} />
           <Route path="/organizationDetails/:id" element={<OrganizationDetails />} />
           <Route path="/Help" element={<Help />} />
           <Route path="/SignupPage" element={<SignupPage />} />
+          <Route path="/Help" element={<Help />} />
+
           <Route path="/" element={<LandingPage />} />
           <Route path="/WhoWeAre" element={<WhoWeAre />} />
           <Route path="/GetInvolved" element={<Profile />} />
           <Route path="/ChatBox" element={<ChatBox />} />
         </Routes>
-        {/* <Home /> */}
-      
+        {/* <Home /> */}      
       </Router>
     </div>
     

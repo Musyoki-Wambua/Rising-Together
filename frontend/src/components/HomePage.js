@@ -79,7 +79,7 @@ function HomePage() {
   }
   return (
     <section className="font-serif">
-      {/* <AdminButton /> */} <NavBar/>
+      {/* <AdminButton /> <NavBar/> */}
       <div className="font-serif flex flex-wrap">
         <div className="mt-6 w-full  md:w-1/2 p-">
           <div className="h-52">
