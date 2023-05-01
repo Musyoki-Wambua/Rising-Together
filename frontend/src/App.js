@@ -13,6 +13,7 @@ import Review from "./components/Review";
 import SignupPage from "./components/SignupPage";
 import Help from "./components/Help";
  import Insight from "./components/Insight";
+import ChatBox from "./components/ChatBox";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/WhoWeAre" element={<WhoWeAre />} />
           <Route path="/GetInvolved" element={<Profile />} />
+          <Route path="/ChatBox" element={<ChatBox />} />
         </Routes>
         {/* <Home /> */}
       

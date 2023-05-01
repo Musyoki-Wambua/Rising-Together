@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ChatBox from "./ChatBox";
 function LandingPage() {
   return (
     <section style={{ backgroundColor: '#0E503F' }} className="min-h-screen bg-green-900">
@@ -29,9 +30,14 @@ function LandingPage() {
          <div className="flex mt-32">
          <Link to="/login">  <button className="text-gray-700 px-4 py-2  hover:bg-yellow-500 bg-yellow-600">Give now</button></Link>
             <div className="bg-green-700 ml-14  text-white px-4 py-2  hover:bg-green-600"> <Link to="/SignupPage">   <button className="">Become a Volunteer</button></Link>
+       
         </div>
            </div>
       </div>
+      <div className="fixed bottom-0 right-0 m-4">
+  <ChatBox />
+</div>
+
     </div>
     <div style={{ width: '47%' }} className="w-full  px-4">
       <img

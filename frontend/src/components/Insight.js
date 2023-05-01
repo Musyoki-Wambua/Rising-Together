@@ -83,7 +83,7 @@ function Insight (){
     //         </div>
     //     </div>
     // </body>
-    <div className="bg-pink-800 h-full">
+    <div className="bg-blue-900 h-full">
     <div className="grid grid-cols-2">
     <div className=" ">
     <div class='title'>
@@ -95,7 +95,7 @@ function Insight (){
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="graph-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 27.000000)">
-        <g id="y_axis" font-size="15.0833333" font-family=".HelveticaNeueDeskInterface-Regular, .Helvetica Neue DeskInterface" fill="#000000" opacity="43.4" font-weight="bold">
+        <g id="y_axis" font-size="15.0833333" font-family=".HelveticaNeueDeskInterface-Regular, .Helvetica Neue DeskInterface" fill="#ffff" opacity="43.4" font-weight="bold">
             <text  id="0">
                 <tspan x="25.3008249" y="264.333333" >0</tspan>
             </text>
@@ -125,11 +125,11 @@ function Insight (){
             </text>
         </g>
         <g id="GRAPHS" transform="translate(64.000000, 16.000000)" stroke-linecap="round" stroke-width="8" stroke-linejoin="round">
-            <polyline id="Banks" stroke="#5BCAC1" points="0 1 88.0438662 1 128.985782 137 180.170616 137 224.189573 182 256.947867 91 301.990521 137 346.009479 91 392.087202 91 429.952607 179"></polyline>
-            <polyline id="Bridge" stroke="#81DEFF" points="2.04739336 183 54.2559242 227 96.2274882 47 133.080569 1 302.018438 1 346.680361 44.6280822 386.957346 0 427.905213 43"></polyline>
-            <polyline id="PayPal" stroke="#F6F5A6" points="2.04739336 180 53.273159 180 99.2985782 91 137.175355 47 219.077488 47 256.947867 90 301.990521 47 349.080569 137 398.228672 137 432 91"></polyline>
+            <polyline id="Banks" stroke="#e1bb47" points="0 1 88.0438662 1 128.985782 137 180.170616 137 224.189573 182 256.947867 91 301.990521 137 346.009479 91 392.087202 91 429.952607 179"></polyline>
+            <polyline id="Bridge" stroke="#cc270a" points="2.04739336 183 54.2559242 227 96.2274882 47 133.080569 1 302.018438 1 346.680361 44.6280822 386.957346 0 427.905213 43"></polyline>
+            <polyline id="PayPal" stroke="#2196f3" points="2.04739336 180 53.273159 180 99.2985782 91 137.175355 47 219.077488 47 256.947867 90 301.990521 47 349.080569 137 398.228672 137 432 91"></polyline>
         </g>
-        <g id="x_axis" transform="translate(71.974046, 271.541667)" font-size="15.0833333" font-family=".HelveticaNeueDeskInterface-Regular, .Helvetica Neue DeskInterface" fill="#000000" opacity="52.4" font-weight="bold">
+        <g id="x_axis" transform="translate(71.974046, 271.541667)" font-size="15.0833333" font-family=".HelveticaNeueDeskInterface-Regular, .Helvetica Neue DeskInterface" fill="#fff" opacity="52.4" font-weight="bold">
             <text id="1">
                 <tspan x="0.396183206" y="11">1</tspan>
             </text>
@@ -185,6 +185,8 @@ function Insight (){
     <div class="pie">
   <div class="top">19% HTML</div>
   <div class="bottom">81% CSS</div>
+  <div class="bottom">999% CSS</div>
+  
 </div></div>
 </div>
 </div>
