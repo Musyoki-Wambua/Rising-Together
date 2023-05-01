@@ -170,6 +170,9 @@ rswag
 ### d. DELETE/ donations/:id
 - This endpoint deletes an existing donor, identified by the id parameter in the URL.
 
+you can also view the documentation of the routes in;
+``https://app.swaggerhub.com/apis-docs/Musyoki-Wambua/rising_together/1.0.0#/User``
+
 
 
 ## Contributors
