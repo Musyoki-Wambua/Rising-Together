@@ -11,7 +11,7 @@ class User < ApplicationRecord
       validates :email, presence: true, uniqueness: true 
       validates :password, length: {in: 5..10}
       validates :password_confirmation, presence: true
-      # validates :role, inclusion: { in: %w[user], message: "Only users can sign up" }
+
       
   #Defining constants for role values
     ROLES = {
