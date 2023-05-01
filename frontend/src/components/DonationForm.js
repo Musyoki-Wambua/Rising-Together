@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const DonationForm = () => {
   const [amount, setAmount] = useState(0);
   const [firstName, setFirstName] = useState("");
@@ -214,9 +214,9 @@ const DonationForm = () => {
           </div>
 
           <div className="mb-6">
-            <button
+            <button href="d"
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              onClick={handleSubmit} >
+               >
               Donate Now
             </button>
           </div>

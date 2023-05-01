@@ -5,12 +5,13 @@ function SignupPage() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [password_confirmation, setPasswordConfirmation] = useState("");
+  const [role, setRole] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const userData = { username, email, password, confirmPassword };
-    fetch("/api/signup", {
+    const userData = { username, email, role, password, password_confirmation };
+    fetch("http://localhost:3000/users/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userData),
@@ -27,7 +28,7 @@ function SignupPage() {
     >
       <a
         href="#"
-        style={{ height: "535px" }}
+        style={{ height: "630px" }}
         className=" w-96 relative block overflow-hidden rounded-xl bg-[url(https://images.unsplash.com/photo-1515658323406-25d61c141a6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=709&q=80)] bg-cover bg-center bg-no-repeat"
       >
         <div class="absolute inset-0 bg-black/25"></div>
@@ -86,52 +87,67 @@ function SignupPage() {
               Password
             </label>
             <input
- 
-          className="border rounded-lg px-3 py-2 w-full"
-          type="password"
-          placeholder="your password"
-          id="password"
-          name="password"
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-        />
+              className="border rounded-lg px-3 py-2 w-full"
+              type="password"
+              placeholder="your password"
+              id="password"
+              name="password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 font-bold mb-2"
+              htmlFor="confirmPassword"
+            >
+              Confirm Password
+            </label>
+            <input
+              className="border rounded-lg px-3 py-2 w-full"
+              type="password"
+              placeholder="confirm password"
+              id="confirmPassword"
+              name="confirmPassword"
+              value={password_confirmation}
+              onChange={(event) => setPasswordConfirmation(event.target.value)}
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 font-bold mb-2"
+              htmlFor="confirmPassword"
+            >
+              Role
+            </label>
+            <input
+              className="border rounded-lg px-3 py-2 w-full"
+              type="role"
+              placeholder="confirm password"
+              id="confirmPassword"
+              name="confirmPassword"
+              value={role}
+              onChange={(event) => setRole(event.target.value)}
+            />
+          </div>
+          <button
+            type="submit"
+            className="bg-green-500 text-white px-4 py-2 rounded-lg"
+          >
+            SignUp
+          </button>
+
+          <p className="mt-4">
+            Already have an account?{" "}
+            <Link to="/login" className="text-green-500">
+              LogIn
+            </Link>
+          </p>
+        </form>
       </div>
-
-      <div className="mb-4">
-        <label
-          className="block text-gray-700 font-bold mb-2"
-          htmlFor="confirmPassword"
-        >
-          Confirm Password
-        </label>
-        <input
-          className="border rounded-lg px-3 py-2 w-full"
-          type="password"
-          placeholder="confirm password"
-          id="confirmPassword"
-          name="confirmPassword"
-          value={confirmPassword}
-          onChange={(event) => setConfirmPassword(event.target.value)}
-        />
-      </div>
-
-      <button
-        type="submit"
-        className="bg-green-500 text-white px-4 py-2 rounded-lg"
-      >
-        SignUp
-      </button>
-
-      <p className="mt-4">
-        Already have an account?{" "}
-        <Link to="/login" className="text-green-500">
-          LogIn
-        </Link>
-      </p>
-    </form>
-  </div>
-</section>
-);
+    </section>
+  );
 }
 
 export default SignupPage;

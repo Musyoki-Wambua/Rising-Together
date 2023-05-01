@@ -11,6 +11,7 @@ import OrganizationDetails from "./components/OrganizationDetails";
 import Profile from "./components/Profile";
 import Review from "./components/Review";
 import SignupPage from "./components/SignupPage";
+import Help from "./components/Help"
  
 
 function App() {
@@ -23,14 +24,16 @@ function App() {
         
         <Routes>          
           <Route path="/HomePage" element={<HomePage />} />
-          <Route path="/Organization" element={<Organization />} />        
+          <Route path="/Organizations" element={<Organization />} />        
           <Route path="/login" element={<Login />} />
+          <Route path="/WhoweAre" element={<WhoWeAre />} />
           <Route path="/organizationDetails/:id" element={<OrganizationDetails />} />
           <Route path="/SignupPage" element={<SignupPage />} />
+          <Route path="/Help" element={<Help />} />
+
           <Route path="/" element={<LandingPage />} />
         </Routes>
-        {/* <Home /> */}
-      
+        {/* <Home /> */}      
       </Router>
     </div>
     
