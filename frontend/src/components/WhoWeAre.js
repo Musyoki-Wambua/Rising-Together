@@ -1,5 +1,5 @@
 import React from "react";
-
+import NavBar from "./NavBar";
 
 const WhoWeAre = () => {
   return (
@@ -17,18 +17,18 @@ const WhoWeAre = () => {
           <div className="lg:w-1/3 px-4 mb-8">
             <div className="rounded-lg h-64 overflow-hidden">
               <img
-                className="object-cover h-full w-full"
-                src="https://media.istockphoto.com/id/1274979025/photo/confident-businessman-looking-forward-and-being-cool.jpg?b=1&s=170667a&w=0&k=20&c=bMqkV9j7Qzk-12EorlPbm8y0F3MUOhDUIDOmNZlsJHc="
+                className="object-cover h-96 w-96"
+                src="https://img.freepik.com/premium-vector/man-male-character-avatar-vector-portrait-businessman-type-clothes_491904-56.jpg?size=626&ext=jpg&ga=GA1.1.1160669967.1680895840&semt=ais"
                 alt="Team member"
               /> 
               
             
             </div>
             <h3 className="mt-6 text-xl font-bold text-gray-800">
-              John Doe
+              Joseph Wambua
             </h3>
             <p1 className="mt-2 text-white-600">Co-founder and CEO.</p1><br></br>
-            <p2 className="mt-2 text-White-500">I alongside Jane and Michael initiated the organization, came up with the idea of this organization. I am  responsible for overseeing the day-to-day operations, making strategic decisions, and ensuring the organization's mission and goals are met. </p2>
+            <p2 className="mt-2 text-White-500">I alongside Trevor and Simon initiated the organization, came up with the idea of this organization. I am  responsible for overseeing the day-to-day operations, making strategic decisions, and ensuring the organization's mission and goals are met. </p2>
           </div>
           <div className="lg:w-1/3 px-4 mb-8">
             <div className="rounded-lg h-64 overflow-hidden">
@@ -39,35 +39,35 @@ const WhoWeAre = () => {
               />
             </div>
             <h3 className="mt-6 text-xl font-bold text-gray-800">
-              Jane Smith
+              Trevor Febias
             </h3>
             <p1 className="mt-2 text-white-600">Co-founder and COO.</p1><br></br>
-            <p2 className="mt-2 text-White-500"> I alongside John and Michael initiated the organization, came up with the idea of this organization. I oversee the organization's internal operations, ensuring that everything runs smoothly, from personnel management to logistics.</p2>
+            <p2 className="mt-2 text-White-500"> I alongside Joseph and Simon initiated the organization, came up with the idea of this organization. I oversee the organization's internal operations, ensuring that everything runs smoothly, from personnel management to logistics.</p2>
           </div>
           <div className="lg:w-1/3 px-4 mb-8">
             <div className="rounded-lg h-64 overflow-hidden">
               <img
-                className="object-cover h-full w-full"
-                src="https://media.istockphoto.com/id/1201144328/photo/smiling-black-man-in-suit-posing-on-studio-background.jpg?s=612x612&w=0&k=20&c=abcU_jcFCUgSkmpXAd5qfrsUFUcdv6oOMdtW2U-m_8g="
+                className="object-cover h-90 w-90"
+                src="https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50581.jpg?size=626&ext=jpg&ga=GA1.2.1160669967.1680895840&semt=ais"
                 alt="Team member"
               />
             </div>
             <h3 className="mt-6 text-xl font-bold text-gray-800">
-              Michael Johnson
+              Simon Muriithi
             </h3>
             <p1 className="mt-2 text-white-600">Co-founder and CFO.</p1><br></br>
-            <p2 className="mt-2 text-White-500"> I alongside John and Jane initiated the organization, came up with the idea of this organization. I responsible for managing the organization's financial resources, including budgeting, financial reporting, and fundraising.</p2>
+            <p2 className="mt-2 text-White-500"> I alongside Joseph and Trevor initiated the organization, came up with the idea of this organization. I responsible for managing the organization's financial resources, including budgeting, financial reporting, and fundraising.</p2>
           </div>
           <div className="lg:w-1/3 px-4 mb-8">
             <div className="rounded-lg h-64 overflow-hidden">
               <img
-                className="object-cover h-full w-full"
-                src="https://media.istockphoto.com/id/1180926825/photo/studio-headshot-of-a-beautiful-businesswoman.jpg?b=1&s=170667a&w=0&k=20&c=se-QitxWiiIDodQ86Rv3CVMmeGsAmfNQdbjyAv9Pr9s="
+                className="object-cover h-96 w-96"
+                src="https://i.pinimg.com/236x/ec/2c/3d/ec2c3d6d4de6e36f5db171c31b730e8a.jpg"
                 alt="Team member"
               />
             </div>
             <h3 className="mt-6 text-xl font-bold text-gray-800">
-              Stella Stephanie
+              David Mwai
             </h3>
             <p1 className="mt-2 text-white-600">Marketing and Communications Director.</p1><br></br>
             <p2 className="mt-2 text-White-500">I am responsible for promoting the organization's mission, managing the organization's branding, and developing and executing marketing and communication strategies.</p2>
@@ -75,13 +75,13 @@ const WhoWeAre = () => {
           <div className="lg:w-1/3 px-4 mb-8">
             <div className="rounded-lg h-64 overflow-hidden">
               <img
-                className="object-cover h-full w-full"
-                src="https://media.istockphoto.com/id/1181092015/photo/latin-haired-latina-woman-with-her-arms-crossed-looking-at-the-camera-while-smiling.jpg?s=612x612&w=0&k=20&c=ywXKnI6xKsCcz7n1ye1GpmFzdPiXIMEG_q47-2R3nPE="
+                className="object-cover h-90 w-90"
+                src="https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50583.jpg?size=626&ext=jpg&ga=GA1.1.1160669967.1680895840&semt=ais"
                 alt="Team member"
               />
             </div>
             <h3 className="mt-6 text-xl font-bold text-gray-800">
-              Olivia Camilla
+              Antony Tulla
             </h3>
             <p1 className="mt-2 text-white-600">Human Resources Manager.</p1><br></br>
             <p2 className="mt-2 text-White-500"> I am responsible for managing the organization's human resources, including hiring, training, and performance management.</p2>
@@ -89,13 +89,13 @@ const WhoWeAre = () => {
           <div className="lg:w-1/3 px-4 mb-8">
             <div className="rounded-lg h-64 overflow-hidden">
               <img
-                className="object-cover h-full w-full"
-                src="https://media.istockphoto.com/id/109840614/photo/happy-japanese-man.jpg?b=1&s=170667a&w=0&k=20&c=i2YogrHIZlxB6S9O4tN4TslhtoegVSRsYpVN2F3024E="
+                className="object-cover h-96 w-96"
+                src="https://i.pinimg.com/236x/2b/52/4e/2b524e336c16d5defec2f8cc532c765b.jpg"
                 alt="Team member"
               />
             </div>
             <h3 className="mt-6 text-xl font-bold text-gray-800">
-              Rin Hinata
+              Faith Kigen
             </h3>
             <p1 className="mt-2 text-white-600">Program Coordinator.</p1><br></br>
             <p2 className="mt-2 text-White-500"> I support the Program Director/Manager in the development and implementation of the organization's programs and services.</p2>

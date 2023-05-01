@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import NavBar from "./NavBar";
 function HomePage() {
   const [ngos, setNGOs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch(
-        "https://api.jsonbin.io/v3/b/643c58ecace6f33a220c83d1/latest"
-      );
+      const response = await fetch("http://localhost:3000/organizations");
       const data = await response.json();
-      setNGOs(data.record);
+      setNGOs(data);
+      console.log(data);
       setIsLoading(false);
     }
 
@@ -35,6 +36,21 @@ function HomePage() {
       </body>
     );
   }
+
+  function AdminButton() {
+    const location = useLocation();
+    const role = new URLSearchParams(location.search).get("role");
+
+    if (role === "admin") {
+      return (
+        <button className="bg-red-500 text-white px-4 py-2 rounded-lg">
+          Admin Button
+        </button>
+      );
+    } else {
+      return null;
+    }
+  }
   const targetedNGOId = 1;
   const targetedNGO = ngos.find((ngo) => ngo.id === targetedNGOId);
 
@@ -48,11 +64,23 @@ function HomePage() {
   const targetedNGOId5 = 5;
   const targetedNGO5 = ngos.find((ngo) => ngo.id === targetedNGOId5);
 
+  function MyComponent() {
+    const location = useLocation();
+    const isUser = location.search.indexOf("role=admin") === -1;
+    const role = isUser ? "user" : "admin";
+
+    return (
+      <Link to={`/Organization?role=${role}`}>
+        <button className="bg-green-600 w-32 h-11 text-white text-bold hover:bg-green-800">
+          {role === "admin" ? "Impact Hub " : "Impact Hub"}
+        </button>
+      </Link>
+    );
+  }
   return (
     <section className="font-serif">
-       
+      {/* <AdminButton /> <NavBar/> */}
       <div className="font-serif flex flex-wrap">
-        
         <div className="mt-6 w-full  md:w-1/2 p-">
           <div className="h-52">
             <a
@@ -82,13 +110,13 @@ function HomePage() {
                     </p>
                   )}
                   <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                  {ngos.length > 0 && (
-        <Link to={`/organizationDetails/${ngos[0].id}`}>
-          <button className="bg-green-700 w-full h-8 text-xl text-white">
-            Donate
-          </button>
-        </Link>
-      )}
+                    {ngos.length > 0 && (
+                      <Link to={`/organizationDetails/${ngos[0].id}`}>
+                        <button className="bg-green-700 w-full h-8 text-xl text-white">
+                          Donate
+                        </button>
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>
@@ -106,17 +134,17 @@ function HomePage() {
                 className=" group relative block bg-black"
               >
                 {ngos.length > 0 && (
-                <img
-                  alt="Developer"
-                  src={`${ngos[1].image_url}`}
-                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-                />
-              )}
+                  <img
+                    alt="Developer"
+                    src={`${ngos[1].image_url}`}
+                    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                  />
+                )}
 
                 <div className=" relative p-4 sm:p-6 lg:p-8">
                   <div className="mt- sm:mt- lg:mt-44">
                     <div className="text-white translate-y-11   transition-all group-hover:translate-y-0 group-hover:opacity-100  ">
-                    {ngos.length > 0 && (
+                      {ngos.length > 0 && (
                         <p className="text-gray-400  text-sm mt-20">
                           {ngos[1].location}
                         </p>
@@ -141,18 +169,18 @@ function HomePage() {
                 style={{ width: "50vh ", height: "33.6vh" }}
                 className=" group relative block bg-black"
               >
-               {ngos.length > 0 && (
-                <img
-                  alt="Developer"
-                  src={`${ngos[2].image_url}`}
-                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-                />
-              )}
+                {ngos.length > 0 && (
+                  <img
+                    alt="Developer"
+                    src={`${ngos[2].image_url}`}
+                    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                  />
+                )}
 
                 <div className=" relative p-4 sm:p-6 lg:p-8">
                   <div className="mt- sm:mt- lg:mt-44">
                     <div className="text-white translate-y-11   transition-all group-hover:translate-y-0 group-hover:opacity-100  ">
-                    {ngos.length > 0 && (
+                      {ngos.length > 0 && (
                         <p className="text-gray-400  text-sm mt-20">
                           {ngos[2].location}
                         </p>
@@ -177,12 +205,12 @@ function HomePage() {
                 className=" group relative block bg-black"
               >
                 {ngos.length > 0 && (
-                <img
-                  alt="Developer"
-                  src={`${ngos[3].image_url}`}
-                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-                />
-              )}
+                  <img
+                    alt="Developer"
+                    src={`${ngos[3].image_url}`}
+                    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                  />
+                )}
 
                 <div className=" relative p-4 sm:p-6 lg:p-8">
                   <div className="mt- sm:mt- lg:mt-44">
@@ -212,12 +240,12 @@ function HomePage() {
                 className=" group relative block bg-black"
               >
                 {ngos.length > 0 && (
-                <img
-                  alt="Developer"
-                  src={`${ngos[4].image_url}`}
-                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-                />
-              )}
+                  <img
+                    alt="Developer"
+                    src={`${ngos[4].image_url}`}
+                    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                  />
+                )}
 
                 <div className=" relative p-4 sm:p-6 lg:p-8">
                   <div className="mt- sm:mt- lg:mt-44">
@@ -243,10 +271,12 @@ function HomePage() {
           </div>
         </div>
       </div>
-       
+
       {/* bottom of top cards */}
       <div>
-        <h1 className="text-center text-green-800 text-4xl mt-8">How it works</h1>
+        <h1 className="text-center text-green-800 text-4xl mt-8">
+          How it works
+        </h1>
       </div>
       <div
         style={{ width: "150vh", height: "" }}
@@ -354,7 +384,7 @@ function HomePage() {
         <div className="grid grid-cols-2 ">
           <div className="mt-40 tet-center">
             <h1 className="text-5xl ml-32 text-green-800 font-bold text-center">
-            Together Fund
+              Together Fund
             </h1>
             <p className="ml-32 mt-11 text-xl text-center">
               Raising Together is a charity website that connects people and
@@ -364,9 +394,16 @@ function HomePage() {
 
             <div className="text-center mt-8 ml-32 mx-auto justify-center">
               {" "}
-              <Link to="/Organization">
+              {/* <Link to={`/Organization?role=${role}`}>
+      <button className="bg-green-600 w-32 h-11 text-white text-bold hover:bg-green-800">
+        {role === "admin" ? "Impact Hub (admin)" : "Impact Hub"}
+      </button>
+    </Link>
+                       
+              <Link to={`/Organization?role=${"admin"}`}>
               <button className="bg-green-600 w-32 h-11 text-white text-bold hover:bg-green-800"> Impact Hub
- </button></Link>
+ </button></Link> */}{" "}
+              <MyComponent />
             </div>
           </div>
 
@@ -382,4 +419,4 @@ function HomePage() {
     </section>
   );
 }
-export default HomePage
+export default HomePage;

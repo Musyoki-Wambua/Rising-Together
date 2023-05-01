@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
+
 function LandingPage() {
   return (
     <section style={{ backgroundColor: '#0E503F' }} className="min-h-screen bg-green-900">
+     <div className="flex flex-wrap items-center text-xl text-white"><img className="h-14 w-14 ml-20"src={require('./Images/logo.png')} alt="My Image" />Raising Together</div>  
   <div className="flex flex-wrap items-center">
     <div className="w-full md:w-1/2 px-4">
-      <div className="text-white font-serif ml-64 mt-40  text-6xl">
+      <div className="text-white font-serif ml-64 mt-20  text-6xl">
       <div className="font-extrabold"> No.1 Trusted <br /> source for <br /></div>  <div className=" italic text-yellow-400 ">Giving <br /> and Volunteering</div>
       </div>
     </div>
     <div className="w-full md:w-1/2 px-4">
       <img
 
-        className="mx-auto mt-32 h-96 mr-96 rounded-md   "
+        className="mx-auto mt-20 h-96 mr-96 rounded-md   "
         src="https://images.pexels.com/photos/11834966/pexels-photo-11834966.jpeg?cs=srgb&dl=pexels-safari-consoler-11834966.jpg&fm=jpg"
         alt="description"
       />
@@ -123,6 +126,8 @@ function LandingPage() {
     </div>
   </div>
 </div>
+< Footer />
+
 
 
   </div>
