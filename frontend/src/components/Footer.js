@@ -25,7 +25,7 @@ function Footer() {
               Rising Together
             </h2>
 
-            <p class="mt-4 text-gray-500">
+            <p class="mt-4 text-white">
               We connect nonprofits, donors and companies in nearly every country in the world.
               We help fellow nonprofits access the funding, tools, training and support they need to serve their communities.
             </p>

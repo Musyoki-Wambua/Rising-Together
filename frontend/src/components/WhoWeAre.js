@@ -17,7 +17,7 @@ const WhoWeAre = () => {
           <div className="lg:w-1/3 px-4 mb-8">
             <div className="rounded-lg h-64 overflow-hidden">
               <img
-                className="object-cover h-96 w-96"
+                className="object-cover h-90 w-90"
                 src="https://img.freepik.com/premium-vector/man-male-character-avatar-vector-portrait-businessman-type-clothes_491904-56.jpg?size=626&ext=jpg&ga=GA1.1.1160669967.1680895840&semt=ais"
                 alt="Team member"
               /> 
@@ -33,8 +33,8 @@ const WhoWeAre = () => {
           <div className="lg:w-1/3 px-4 mb-8">
             <div className="rounded-lg h-64 overflow-hidden">
               <img
-                className="object-cover h-full w-full"
-                src="https://media.istockphoto.com/id/1378072714/photo/young-woman-standing-outdoors.jpg?b=1&s=170667a&w=0&k=20&c=WSur2x1htnIWNw7QmlxWgjquRW8Dz5GodPvZ3-d1-W8="
+                className="object-cover h-90 w-90"
+                src="https://media.istockphoto.com/id/1391424891/vector/portrait-of-a-happy-red-haired-man-with-necktie-avatar-of-a-successful-businessman.jpg?s=612x612&w=0&k=20&c=J6-zRkHzxUnJFDsDblENtuaRCZ2lRy6aaaQiuXQGea4="
                 alt="Team member"
               />
             </div>
@@ -48,7 +48,7 @@ const WhoWeAre = () => {
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 className="object-cover h-90 w-90"
-                src="https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50581.jpg?size=626&ext=jpg&ga=GA1.2.1160669967.1680895840&semt=ais"
+                src="https://media.istockphoto.com/id/1334090265/vector/portrait-of-a-happy-hispanic-man-avatar-of-a-successful-businessman.jpg?s=612x612&w=0&k=20&c=whb4jpBZa1NI6MM5N8tLzMu6j2afG6Ir5LBt8Myg1T0="
                 alt="Team member"
               />
             </div>
@@ -61,8 +61,8 @@ const WhoWeAre = () => {
           <div className="lg:w-1/3 px-4 mb-8">
             <div className="rounded-lg h-64 overflow-hidden">
               <img
-                className="object-cover h-96 w-96"
-                src="https://i.pinimg.com/236x/ec/2c/3d/ec2c3d6d4de6e36f5db171c31b730e8a.jpg"
+                className="object-cover h-90 w-90"
+                src="https://media.istockphoto.com/id/1305955251/vector/an-african-man-is-smiling-a-happy-businessman-a-young-politician.jpg?s=612x612&w=0&k=20&c=KMXsfuSSI9xonabLKeAnEZnPc8wZyxmC_3kuv5KbqsI="
                 alt="Team member"
               />
             </div>
@@ -76,21 +76,21 @@ const WhoWeAre = () => {
             <div className="rounded-lg h-64 overflow-hidden">
               <img
                 className="object-cover h-90 w-90"
-                src="https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50583.jpg?size=626&ext=jpg&ga=GA1.1.1160669967.1680895840&semt=ais"
+                src="https://media.istockphoto.com/id/1306112811/vector/an-african-man-is-smiling-a-happy-student-a-young-politician.jpg?s=612x612&w=0&k=20&c=p1Rm02XBGgP1Sdf_3TIZUbAPhw6m92X9cSz-tYJnpTM="
                 alt="Team member"
               />
             </div>
             <h3 className="mt-6 text-xl font-bold text-gray-800">
               Antony Tulla
             </h3>
-            <p1 className="mt-2 text-white-600">Human Resources Manager.</p1><br></br>
+            <p1 className="mt-2 text-white-600">Human Resource Manager.</p1><br></br>
             <p2 className="mt-2 text-White-500"> I am responsible for managing the organization's human resources, including hiring, training, and performance management.</p2>
           </div>
           <div className="lg:w-1/3 px-4 mb-8">
             <div className="rounded-lg h-64 overflow-hidden">
               <img
-                className="object-cover h-96 w-96"
-                src="https://i.pinimg.com/236x/2b/52/4e/2b524e336c16d5defec2f8cc532c765b.jpg"
+                className="object-cover h-95 w-95"
+                src="https://media.istockphoto.com/id/1352074180/vector/portrait-of-a-beautiful-latin-american-woman-avatar.jpg?s=612x612&w=0&k=20&c=ICrQekJdWXbC24nEgF7EV1SoSZHjzI9Es0tPEd9Ddq4="
                 alt="Team member"
               />
             </div>
@@ -130,7 +130,7 @@ const WhoWeAre = () => {
             <h3 style={{color: '#374151', fontSize: '1.5rem', fontWeight: 'bold'}}>Contacts:</h3>
             <ul style={{listStyle: 'circle', paddingLeft: '1em'}}>
               <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>
-                USA – AUSTIN, 901 EAST E STREET,
+                KENYA – NAIROBI – KISM TOWERS, 901 NGONG ROAD STREET,
               </li>
               <li style={{marginBottom: '10px', color: '#4B5563', fontSize: '1.125rem'}}>
                 Email: <a href="mailto:info@example.com" style={{textDecoration: 'underline', color: '#4B5563'}} 
