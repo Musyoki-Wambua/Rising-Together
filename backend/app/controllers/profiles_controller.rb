@@ -19,16 +19,16 @@ class ProfilesController < ApplicationController
 
     #Create a new user 
     def create 
-      if current_user.role == 'admin' || current_user.role == 'user'
+      # if current_user.role == 'admin' || current_user.role == 'user'
         profile = Profile.create(profile_params)
         if profile.valid?
           render json: profile, status: :ok 
         else
           render json: { errors: profile.errors.full_messages }, status: :unprocessable_entity
         end
-      else
-        render json: { error: "Access Denied!" }, status: :unauthorized
-      end
+      # else
+      #   render json: { error: "Access Denied!" }, status: :unauthorized
+      # end
     end
     
     #Update user profile 
@@ -67,7 +67,7 @@ class ProfilesController < ApplicationController
     
     private 
     def profile_params 
-        params.permit(:image_url, :first_name, :last_name, :age, :gender, :country, :contact, :skills, :user_id)
+        params.permit(:image_url, :first_name, :last_name, :age, :gender, :contact, :skills, :user_id, :country)
     end
 end
 

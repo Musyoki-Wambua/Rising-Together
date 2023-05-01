@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :profiles, execpt: [:index]
+  resources :profiles
   resources :reviews
   resources :donations
   resources :organizations

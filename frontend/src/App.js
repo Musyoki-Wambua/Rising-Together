@@ -11,7 +11,8 @@ import OrganizationDetails from "./components/OrganizationDetails";
 import Profile from "./components/Profile";
 import Review from "./components/Review";
 import SignupPage from "./components/SignupPage";
- 
+import Help from "./components/Help";
+ import Insight from "./components/Insight";
 
 function App() {
   return (
@@ -19,15 +20,19 @@ function App() {
 
     <div className="w-screen h-screen">
       <Router>
-        <NavBar />
+       
         
-        <Routes>          
+        <Routes>        
+        <Route path="/Insight" element={<Insight />} />  
           <Route path="/HomePage" element={<HomePage />} />
           <Route path="/Organization" element={<Organization />} />        
           <Route path="/login" element={<Login />} />
           <Route path="/organizationDetails/:id" element={<OrganizationDetails />} />
+          <Route path="/Help" element={<Help />} />
           <Route path="/SignupPage" element={<SignupPage />} />
           <Route path="/" element={<LandingPage />} />
+          <Route path="/WhoWeAre" element={<WhoWeAre />} />
+          <Route path="/GetInvolved" element={<Profile />} />
         </Routes>
         {/* <Home /> */}
       

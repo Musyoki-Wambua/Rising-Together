@@ -58,27 +58,7 @@ const Organization = () => {
       </body>
     );
   }
-
-  // function Donate( id) {
-  //   const location = useLocation();
-  //   const isUser = location.search.indexOf("role=admin") === -1;
-  //   const role = isUser ? "user" : "admin";
-
-  //   return (
-  //     <Link to={`/organizationDetails/${id}?role=${role}`}>
-  //       <button className="bg-green-600 w-32 h-11 text-white text-bold hover:bg-green-800">
-  //         {role === "admin" ? "Impact Hub " : "Impact Hub"}
-  //       </button>
-  //     </Link>
-  //   //   <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-  //   //   <Link to={`/organizationDetails/${id}`}>
-  //   //     <button className="bg-green-700 w-full h-8 text-xl text-white">
-  //   //       Donate
-  //   //     </button>
-  //   //   </Link>
-  //   // </div>
-  //   );
-  // }
+ 
   function AdminButton({ id }) {
     const location = useLocation();
     const role = new URLSearchParams(location.search).get("role");
@@ -220,7 +200,7 @@ const Organization = () => {
                     />
                   </button>
                   <button className="ml-9">
-                    <EditeButton />
+                    {/* <EditeButton /> */}
                   </button>
                   {/* <AdminButton onClick={() => handleDelete(organization.id)} /> */}
                 </div>
