@@ -15,12 +15,23 @@ function ChatBox() {
       response = "How can I help you?";
     } else if (message.includes("how are you")) {
       response = "I'm doing well, thank you for asking.";
-    } else if (message.includes("what is your name")) {
+    } 
+    else if (message.includes("how do i login")) {
+      response = `To login, please click on the login button on the landing page, if you dont have an account click on signup fill the form and youre all set.`;
+    }
+    else if (message.includes("how do i sign up")) {
+      response = `To sign up, please click on the link under the login form, fill in the form and youre all set.`;
+    }
+    else if (message.includes("how do donate ")) {
+      response = `To donate click on the impucthub button .`;
+    }
+    
+    else if (message.includes("what is your name")) {
       response = "My name is CharityAI.";
     } else if (message.includes("whats your name")) {
       response = "My name is CharityAI.";
     } else if (message.includes("help")) {
-      response = "If you need any.";
+      response = "If you need any help click on the help button on the navigation bar .";
     } else {
       response = "I'm sorry, I don't understand. Can you please rephrase?";
     }
