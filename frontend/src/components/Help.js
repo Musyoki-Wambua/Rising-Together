@@ -1,4 +1,5 @@
 import React from "react";
+ 
 import Card from "./Card.js";
 import donate from "./Images/donate.png"
 import login from "./Images/login.png"
@@ -16,6 +17,9 @@ import search from "./Images/search.png";
 const Help = () => {
   return (
     <div className="bg-gray-200 min-h-screen">
+      <div className="fixed bottom-0 right-0 m-4">
+ 
+</div>
       {/* <NavBar/> */}
       <div className="mx-auto px-4 py-8 max-w-7xl">
         <h1 className="text-4xl font-bold text-center mt-8 mb-12">

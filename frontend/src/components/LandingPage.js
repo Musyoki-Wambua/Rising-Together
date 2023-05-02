@@ -35,7 +35,7 @@ function LandingPage() {
            </div>
       </div>
       <div className="fixed bottom-0 right-0 m-4">
-  <ChatBox />
+   
 </div>
 
     </div>
@@ -130,7 +130,7 @@ function LandingPage() {
     </div>
   </div>
 </div>
-{/* < Footer /> */}
+ 
 
 
 

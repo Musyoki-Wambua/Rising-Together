@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import ChatBox from "./ChatBox";
 import NavBar from "./NavBar";
 const Organization = () => {
   const [organization, setOrganization] = useState([]);
@@ -161,6 +162,9 @@ const Organization = () => {
     return (
       <div className="mt-6 w-full   md:w-full h-full p-">
         <div className=" ">
+        <div className="fixed bottom-0 right-0 m-4">
+  <ChatBox />
+</div>
           <a
             href="#"
             className="mt- h-full w-full  group relative block bg-black"

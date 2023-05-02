@@ -18,16 +18,16 @@ class OrganizationsController < ApplicationController
     
     #Create an organization
     def create 
-        if current_user.role == 'admin'
+        # if current_user.role == 'admin'
           organization = Organization.create(organization_params)
           if organization.valid? 
             render json: organization, status: :ok 
           else
             render json: { errors: organization.errors.full_messages }, status: :unprocessable_entity 
           end
-        else
-          render json: { error: "Access Denied!" }, status: :unauthorized
-        end
+        # else
+        #   render json: { error: "Access Denied!" }, status: :unauthorized
+        # end
       end
       
     #Update an organization/:id/  

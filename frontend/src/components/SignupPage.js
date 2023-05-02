@@ -124,7 +124,7 @@ function SignupPage() {
             <input
               className="border rounded-lg px-3 py-2 w-full"
               type="role"
-              placeholder="confirm password"
+              placeholder="role"
               id="confirmPassword"
               name="confirmPassword"
               value={role}

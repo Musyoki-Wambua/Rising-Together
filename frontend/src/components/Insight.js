@@ -1,4 +1,5 @@
 import "./CSS/insight.css"
+ 
 function Insight (){
     return (
     //     <body className="justify-end">

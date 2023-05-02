@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ChatBox from "./ChatBox";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -79,7 +80,7 @@ function HomePage() {
   }
   return (
     <section className="font-serif">
-      {/* <AdminButton /> <NavBar/> */}
+      {/* <AdminButton /> */} <NavBar/>
       <div className="font-serif flex flex-wrap">
         <div className="mt-6 w-full  md:w-1/2 p-">
           <div className="h-52">
@@ -164,6 +165,9 @@ function HomePage() {
             </div>
 
             <div className="">
+            <div className="fixed bottom-0 right-0 m-4">
+ 
+</div>
               <a
                 href="#"
                 style={{ width: "50vh ", height: "33.6vh" }}
