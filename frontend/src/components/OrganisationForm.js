@@ -26,7 +26,7 @@ const OrganisationForm = () => {
       image_url,
       user_id
     };
-    fetch('http://localhost:3000/organizations', {
+    fetch('https://rising-together-ni0b.onrender.com/organizations', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
