@@ -8,7 +8,7 @@ function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("http://localhost:3000/organizations");
+      const response = await fetch("https://rising-together-ni0b.onrender.com/organizations");
       const data = await response.json();
       setNGOs(data);
       console.log(data);

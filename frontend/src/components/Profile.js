@@ -15,7 +15,7 @@ const Profile = () => {
     })
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch('http://127.0.0.1:3000/profiles', {
+        fetch('https://rising-together-ni0b.onrender.com/profiles', {
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(formData)

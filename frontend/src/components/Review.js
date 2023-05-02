@@ -16,7 +16,7 @@ const Review = ({ user_id, organization_id, organization_name, username }) => {
       comments
     };
 
-    fetch("http://localhost:3000/reviews", {
+    fetch("https://rising-together-ni0b.onrender.com/reviews", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

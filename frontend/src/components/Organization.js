@@ -21,7 +21,7 @@ const Organization = () => {
   
 
   useEffect(() => {
-    fetch(`http://localhost:3000/organizations`)
+    fetch(`https://rising-together-ni0b.onrender.com/organizations`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data.name);
@@ -31,7 +31,7 @@ const Organization = () => {
   }, []);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:3000/organizations/${id}`, { method: "DELETE" })
+    fetch(`https://rising-together-ni0b.onrender.com/organizations/${id}`, { method: "DELETE" })
       .then(() => {
         const updatedOrgs = organization.filter((org) => org.id !== id);
         setOrganization(updatedOrgs);

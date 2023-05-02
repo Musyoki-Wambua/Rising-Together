@@ -55,18 +55,12 @@ jobs:
             bin/rails db:migrate 
           fi 
 
-<<<<<<< HEAD
+      - name: Seed data 
+        run: |
+          cd backend
+          bin/rails db:seed
+
       - name: Test
         run: |
           cd backend
           bin/rails test
-
-=======
-#       - name: Test 
-#         run: |
-#           cd backend
-#           bin/rails test 
->>>>>>> d2282b9ec57e2d27a08b7aa86650c94b33e01468
-
-
-    

@@ -15,7 +15,7 @@ function OrganizationDetails() {
   const [organization, setOrganization] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch(" http://localhost:3000/organizations")
+    fetch("https://rising-together-ni0b.onrender.com/organizations")
       .then((response) => response.json())
       .then((data) => {
         console.log(data.name);

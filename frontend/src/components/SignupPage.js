@@ -11,7 +11,7 @@ function SignupPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const userData = { username, email, role, password, password_confirmation };
-    fetch("http://localhost:3000/users/signup", {
+    fetch("https://rising-together-ni0b.onrender.com/users/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userData),

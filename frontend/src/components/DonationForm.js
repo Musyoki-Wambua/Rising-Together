@@ -27,7 +27,7 @@ const DonationForm = () => {
     });
     console.log(data)
 
-    fetch('URL' , {
+    fetch('https://rising-together-ni0b.onrender.com/donations' , {
       method: 'POST', 
       headers: {
         'Content-Type': 'application/json'
