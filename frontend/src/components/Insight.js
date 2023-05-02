@@ -1,5 +1,5 @@
 import "./CSS/insight.css"
- 
+ import NavBar from "./NavBar"
 function Insight (){
     return (
     //     <body className="justify-end">
@@ -84,12 +84,13 @@ function Insight (){
     //         </div>
     //     </div>
     // </body>
-    <div className="bg-blue-900 h-full">
-    <div className="grid grid-cols-2">
+    <div className="bg-blue-900 font-serif h-full">
+        <NavBar/>
+    <div className="mt-5 grid grid-cols-2">
     <div className=" ">
     <div class='title'>
-  <p>Animated with CSS</p>
-   <p class="name">by Vanessa Pitchford Cristobal</p>
+  <p className="text-center text-4xl mt-7 text-green-300">Access Key Metrics and Performance Indicators</p>
+   <p class="text-center text-2xl mt-5 text-green-200"> Real-Time Data and Analytics</p>
 </div>
 <svg class='container' width="529px" height="486px" viewBox="30 27 529 286" version="1.1" xmlns="http://www.w3.org/2000/svg" >
      
@@ -183,12 +184,15 @@ function Insight (){
 </svg>
 </div>
 <div>
-    <div class="pie">
-  <div class="top">19% HTML</div>
-  <div class="bottom">81% CSS</div>
-  <div class="bottom">999% CSS</div>
+    <div class="pie font-bold">
+    <div class="down text-black fixed">30% Empowering <br></br> Communities </div>
+  <div class="top text-bold text-white">19% Protecting the<br></br> Environment </div>
+  <div class="bottom text-white">51% Supporting Those in Need</div>
   
-</div></div>
+  
+</div>
+
+</div>
 </div>
 </div>
     )
