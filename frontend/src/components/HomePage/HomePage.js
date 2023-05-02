@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ChatBox from "./ChatBox";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import NavBar from "./NavBar";
+import NavBar from "../NavBar/NavBar";
 function HomePage() {
   const [ngos, setNGOs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);

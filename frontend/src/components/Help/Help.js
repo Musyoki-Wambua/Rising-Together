@@ -6,7 +6,7 @@ import login from "./Images/login.png"
 import organizations from "./Images/organizations.png"
 import imapacthub from "./Images/impact.png"
 import landing from "./Images/landing.png"
-import NavBar from "./NavBar.js";
+import NavBar from "../NavBar/NavBar.js";
 import search from "./Images/search.png";
 // import gogin_getstarted from "./img/gogin_getstarted.png";
 // import home from "./img/home.png";
