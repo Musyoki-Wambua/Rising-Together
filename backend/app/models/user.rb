@@ -7,13 +7,13 @@ class User < ApplicationRecord
       has_many :donations 
       has_many :reviews 
 
-  #Validations
+  # #Validations
       validates :email, presence: true, uniqueness: true 
       validates :password, length: {in: 5..10}
       validates :password_confirmation, presence: true
-      # validates :role, inclusion: { in: %w[user], message: "Only users can sign up" }
+
       
-  #Defining constants for role values
+  # #Defining constants for role values
     ROLES = {
       admin: 'admin',
       user: 'user'

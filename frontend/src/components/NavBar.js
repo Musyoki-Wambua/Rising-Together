@@ -1,8 +1,44 @@
 import React from "react";
 import logo from "./Images/logo.png";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
  
 function NavBar() {
+
+  function AddOrg({ id }) {
+    const location = useLocation();
+    const role = new URLSearchParams(location.search).get("role");
+
+    if (role === "admin") {
+      return (
+        <div>
+          <button class=" text-white hover:bg-gray-700 hover:text-white font-medium px-2 py-1 rounded-md transition-colors duration-300 ">
+            
+           Add Organization
+          </button>
+        </div>
+      );
+    } else {
+      return null;
+    }
+  }
+  function Insight({ id }) {
+    const location = useLocation();
+    const role = new URLSearchParams(location.search).get("role");
+
+    if (role === "admin") {
+      return (
+        <div>
+          <button class=" text-white hover:bg-gray-700 hover:text-white font-medium px-2 py-1 rounded-md transition-colors duration-300 ">
+            
+           Insights
+          </button>
+        </div>
+      );
+    } else {
+      return null;
+    }
+  }
   return (
     <div className="mx-auto  bg-green-900">
       <nav className="border-gray-200">
@@ -70,12 +106,12 @@ function NavBar() {
               </li>
 
               <li>
-                <a
+                <Link to='/Profile'
                   href="#"
                   className="text-white hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300"
                 >
-                  Get Involved
-                </a>
+                  Profile
+                </Link>
               </li>
 
               <li>
@@ -96,6 +132,26 @@ function NavBar() {
                   className="text-white hover:bg-gray-700 hover:text-white font-medium px-3 py-2 rounded-md transition-colors duration-300"
                 >
                  Organizations{" "}
+                </a>
+                </Link>
+              </li>
+              <li>
+                <Link to ="/AddOrg">
+                <a
+                  href="#"
+                  className=" "
+                >
+                 <AddOrg/>
+                </a>
+                </Link>
+              </li>
+              <li>
+                <Link to ="/Insight">
+                <a
+                  href="#"
+                  className=" "
+                >
+                 <Insight/>
                 </a>
                 </Link>
               </li>

@@ -1,0 +1,52 @@
+ 
+  
+ 
+  
+  svg {
+	margin: 0 auto;
+	
+	width: 100%;
+	padding-top: 40px;
+  }
+  
+  polyline {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: dash 5s ease-in forwards;
+	animation-iteration-count: 10;
+	animation-direction: alternate;
+  }
+  
+  @keyframes dash{
+	to {
+	  stroke-dashoffset: 0;
+	}
+  }
+  
+  
+   
+  .name {
+	font-size: .8rem;
+	font-weight: light;
+  }
+   
+  
+  .pie {
+	margin: 1vmin auto;
+	border-radius: 50%;
+	width: 65vmin;
+	height: 55vmin;
+	overflow: hidden;
+	background: linear-gradient(-21deg, #2196f3 50%, transparent 50%),linear-gradient(to right, #cc270a 50%, #e1bb47 50%), linear-gradient(to right, #2196f3 50%, #ffc107 50%);
+  }
+  
+  .top {
+	margin: 11vmin 0 0 20vmin;
+  }
+  
+  .bottom {
+	margin: 23vmin;
+  }
+  .sup{
+	margin: 22vmin;
+  }

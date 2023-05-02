@@ -11,29 +11,37 @@ import OrganizationDetails from "./components/OrganizationDetails";
 import Profile from "./components/Profile";
 import Review from "./components/Review";
 import SignupPage from "./components/SignupPage";
-import Help from "./components/Help"
- 
+import Help from "./components/Help";
+ import Insight from "./components/Insight";
+ import OrganisationForm from "./components/OrganisationForm";
+ import ChatBox from "./components/ChatBox";
 
 function App() {
   return (
      
 
     <div className="w-screen h-screen">
+     
       <Router>
-        <NavBar />
+      <div className="fixed bottom-0 right-0 m-4">
+  <ChatBox />
+</div>
         
-        <Routes>          
+        <Routes>        
+        <Route path="/Insight" element={<Insight />} />  
           <Route path="/HomePage" element={<HomePage />} />
-          <Route path="/Organizations" element={<Organization />} />        
+          <Route path="/Organization" element={<Organization />} />        
           <Route path="/login" element={<Login />} />
-          <Route path="/WhoweAre" element={<WhoWeAre />} />
           <Route path="/organizationDetails/:id" element={<OrganizationDetails />} />
-          <Route path="/SignupPage" element={<SignupPage />} />
           <Route path="/Help" element={<Help />} />
-
+          <Route path="/SignupPage" element={<SignupPage />} />
           <Route path="/" element={<LandingPage />} />
+          <Route path="/WhoWeAre" element={<WhoWeAre />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/AddOrg" element={<OrganisationForm />} />
         </Routes>
-        {/* <Home /> */}      
+        {/* <Home /> */}
+      
       </Router>
     </div>
     

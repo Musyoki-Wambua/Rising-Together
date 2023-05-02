@@ -1,123 +1,61 @@
-import React from 'react';
-import { useState } from 'react';
-
+import {  useState } from "react"
+import React from "react"
 const Profile = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [contactInfo, setContactInfo] = useState('');
-  const [skills, setSkills] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
-  const [color, setColor] = useState('');
-  // const [loading, setLoading] = useState(false);
-  // const [updated, setUpdated] = useState(false);
-  const [errors, setErrors] = useState([]);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-  };
-
-  const colors = [    { name: 'Red', value: 'red' },    { name: 'Blue', value: 'blue' },    { name: 'Green', value: 'green' },  ];
-
-  return (
-    <form onSubmit={handleSubmit} className='max-w-xl mx-auto'>
-      <div className='mb-6'>
-        <label htmlFor='profile-colors' className='block mb-2 text-gray-700 font-bold'>
-          Profile Color
-        </label>
-        <select
-          id='profile-colors'
-          className='appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-          onChange={(e) => setColor(e.target.value)}
-          value={color}
-        >
-          {colors.map((color) => (
-            <option value={color.value} key={color.name}>
-              {color.name}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      <div className='mb-6'>
-        <label htmlFor='first-name' className='block mb-2 text-gray-700 font-bold'>
-          First Name
-        </label>
-        <input
-          type='text'
-          id='first-name'
-          className='appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-          onChange={(e) => setFirstName(e.target.value)}
-          value={firstName}
-        />
-      </div>
-
-      <div className='mb-6'>
-        <label htmlFor='last-name' className='block mb-2 text-gray-700 font-bold'>
-          Last Name
-        </label>
-        <input
-          type='text'
-          id='last-name'
-          className='appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-          onChange={(e) => setLastName(e.target.value)}
-          value={lastName}
-        />
-      </div>
-
-      <div className='mb-6'>
-        <label htmlFor='skills' className='block mb-2 text-gray-700 font-bold'>
-          Skills
-        </label>
-        <textarea
-          id='skills'
-          className='appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-          onChange={(e) => setSkills(e.target.value)}
-          value={skills}
-        ></textarea>
-      </div>
-
-      <div className='mb-6'>
-        <label htmlFor='contact-info' className='block mb-2 text-gray-700 font-bold'>
-          Contact Information
-        </label>
-        <textarea
-          id='contact-info'
-          className='appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-          onChange={(e) => setContactInfo(e.target.value)}
-          value={contactInfo}
-        ></textarea>
-      </div>
-
-     <div className='mb-6'>
-  <label htmlFor='image' className='block mb-2 text-gray-700 font-bold'>
-    Profile Image
-  </label>
-  <input
-    type='file'
-    id='image'
-    accept='image/*'
-    className='appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-    onChange={(e) => setImageUrl(URL.createObjectURL(e.target.files[0]))}
-  />
-</div>
-
-      <div className='flex items-center justify-between'>
-        <button
-          type='submit'
-          className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline'>
-          Save Changes
-        </button>
-        <button
-            type='button'
-            className='bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
-            // onClick={handleCancel}
-        >
-                Cancel
-        </button>
-        </div>
-    </form>
-    );
-};
-export default Profile;
-
+    const [profiles, setProfiles] = useState([])
+    const [formData, setFormData] = useState({
+        image_url: "",
+        first_name: "",
+        last_name: "",
+        age: "",
+        gender: "",
+        country: "",
+        contact: "",
+        skills: "",
+        user_id: ""
+    })
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        fetch('http://127.0.0.1:3000/profiles', {
+            method: 'POST',
+            headers: {'content-type': 'application/json'},
+            body: JSON.stringify(formData)
+        })
+        .then((response) => {
+            if(response.ok) {
+                return response.json()
+            }
+        })
+        .then(data => {
+            console.log(data)
+            setProfiles([...profiles, data])
+            setFormData({
+                image_url: "",
+                first_name: "",
+                last_name: "",
+                age: "",
+                gender: "",
+                country: "",
+                contact: "",
+                skills: "",
+                user_id: ""
+            })
+        })
+    }
+    return (
+        <div>
+            <form onSubmit={handleSubmit}>
+                <input type="text" value={formData.image_url} onChange={(e) => setFormData({...formData, image_url: e.target.value})} placeholder="profile-image" required/>
+                <input type="text" value={formData.first_name} onChange={(e) => setFormData({...formData, first_name: e.target.value})} placeholder="first-name" required/>
+                <input type="text" value={formData.last_name} onChange={(e) => setFormData({...formData, last_name: e.target.value})} placeholder="last-name" required/>
+                <input type="number" value={formData.age} onChange={(e) => setFormData({...formData, age: e.target.value})} placeholder="age" required/>
+                <input type="text" value={formData.gender} onChange={(e) => setFormData({...formData, gender: e.target.value})} placeholder="gender" required/>
+                <input type="text" value={formData.country} onChange={(e) => setFormData({...formData, country: e.target.value})} placeholder="country" required/>
+                <input type="number" value={formData.contact} onChange={(e) => setFormData({...formData, contact: e.target.value})} placeholder="contact" required/>
+                <input type="text" value={formData.skills} onChange={(e) => setFormData({...formData, skills: e.target.value})} placeholder="skills" required/>
+                <input type="text" value={formData.user_id} onChange={(e) => setFormData({...formData, user_id: e.target.value})} placeholder="user-id" required/>
+                <button type="submit">Create Profile</button>
+            </form>
+    </div>
+  )
+}
+export default Profile

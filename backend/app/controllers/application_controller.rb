@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::API
   # before_action :authenticate_user!, except: [:signup, :login]
-  rescue_from CanCan::AccessDenied do |exception|
+  # rescue_from CanCan::AccessDenied do |exception|
   render json: { error: "Unauthorized to perform this action!" }, status: :forbidden
-  end
+  # end
   
   private
   
