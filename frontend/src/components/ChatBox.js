@@ -45,13 +45,15 @@ function ChatBox() {
 
       <div class="flex items-center justify-center">
         <div class="m-3">
-          <button
-            onClick={handleButtonClick}
-            id="telegram"
-            class="bg-white  transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-green-400 border-green-400 hover:bg-green-400 hover:text-white text-2xl"
-          >
-            <i class="fab fa-telegram-plane"></i>
-          </button>
+        <button 
+  onClick={handleButtonClick}
+  id="telegram"
+  class="bg-green-100 transform hover:-translate-y-3 border-2 w-12 h-12 rounded-full duration-500 text-green-400 border-green-400 hover:bg-green-400 hover:text-white text-2xl"
+>
+  <img className="h-9 " src="https://icones.pro/wp-content/uploads/2021/04/icone-telegramme-symbole-logo-vert.png" alt="Telegram icon" />
+</button>
+
+          
         </div>
       </div>
     );
