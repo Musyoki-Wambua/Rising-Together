@@ -1,200 +1,192 @@
 ## RISING TOGETHER API
-This is web application generally intended for the NGOs to help those who are in need living in poverty with this websit a donor or volunteer can look for a specific NGO where they can send there contribution . It  is built using Ruby on Rails and Postgresql
-
-## Getting started
-## Installation
-Clone this repository: https://github.com/Musyoki-Wambua/Porverty-Line.git
-cd phase 5 project
-then code . to open it in the vs code
-. Install the required dependencies using Bundler:
-bundle install
- . Run the migrations 
- rails db:migrate
-
- ## Usage
- .Start the server with 
- Rails server/ rails s
+Rising Together was created with the mission of bringing nonprofits, donors, and companies together to create a better world. By providing a platform for nonprofits to connect with donors and companies, we hope to help those who are doing important work in their communities to reach their goals and create positive change.
 
  ## Technologies used
- .Ruby on Rail
- .Visual studio
- . postgesql
- .Bcrypt
+- Visual Studio.
+- Ruby on Rails.
+- PostgreSQL.
+- Postman.
+
+## Installation
+1. Clone this repository:
+```
+ https://github.com/Musyoki-Wambua/Rising-Together.git
+```
+2. Navigate to the directory using: 
+```
+cd Rising-Together-backend
+```
+3. Then run ``code .`` to open it in the vs code
+4. Make sure your ruby version is: ``2.7.4`` or above.
+5. Install the required dependencies using:
+```
+bundle install
+```
+6. Run the migrations using
+```
+ rails db:migrate
+```
+7. In the Gemfile we added:
+``` 
+bcrypt
+``` 
+```
+active_model_serializers
+```
+```
+rack-cors
+```
+```
+rswag
+```
+
+8. Open the application in your browser:
+```
+ Rails server/ rails s
+```
+
+
+
+
  ## Table
+
  # Endpoints
- # Users Endpoints
- It should provide the following endpoints
- # POST/users
- It creates a new user. It has the following properties: 
- . Username:The users name
- .Email: The users email
- .Password_digest: Users password
- . Gender: The gender of the user
- .Role: To specify what type of user they are
 
-# PUT/ users/:id
-This endpoint updates an existing user. It has the following properties:
-. Username:The users name
- .Email: The users email
- .Password_digest: Users password
- . Gender: The gender of the user
- .Role: To specify what type of user they are
+ ## 1. Users Endpoints
 
- # DELETE/ users/:id
- It seletes an existing user, identified by the id paramater in the URL
+ - It should provide the following endpoints:
+
+ ### a. POST/users
+- It creates a new user. 
+- It has the following attributes: 
+ `Username, Email, Password_digest,Gender` and `Role`
+
+### b. PATCH/ users/:id
+- This endpoint updates an existing user. 
+- It has the following attributes:
+ ``Username, Email, Password_digest, Gender`` and ``Role``
+
+
+
+ ### c. DELETE/ users/:id
+ - It deletes an existing user, identified by the id parameter in the URL
+
  
- # Volunteer endpoint
- # POST/volunters
- It creates a new volunteer endpoint The request should be a JSON object with the following properties:
- .organization_name: Shows the organization on where to volunteer
- .user_id: shows the users_id of the volunteer
- .organization_id: shows the organization where the they have volunteered
- # GET/ Volunteers
- This endpoint retrieves all volunteers. The response body is an array of volunteers objects, each with the following properties:
- .organization_name: Shows the organization on where to volunteer
- .user_id: shows the users_id of the volunteer
- .organization_id: shows the organization where the they have volunteer
+## 2. Volunteer Endpoints
+ ### a. POST/volunteers
+ - It creates a new volunteer endpoint. 
+ - The request should be a ``JSON object`` with the following attributes:
+ ``organization_name, user_id`` and ``organization_id`` 
+ ### b. GET/ Volunteers
+ - This endpoint retrieves all volunteers. 
+ - The response body is an array of volunteers objects, each with the following 
+   attributes: ``organization_name, user_id`` and ``organization_id``
 
- # GET/volunteers/:id
- It retrives a single volunteer , identified by the id parameter in the URL.
+ ### c.  GET/volunteers/:id
+ - It retrieves a single volunteer, identified by the id parameter in the URL.
 
- # PUT/ Volunteers
- This endpoint updates an  existing volunteer, identified by the id parameter. The request body should be a JSON object with the following properties: 
- .Username: Name of the volunteer
+ ###  d. PATCH/ volunteers
+ - This endpoint updates an existing volunteer, identified by the id parameter. 
+ - The request body should be a ``JSON object`` with the following attributes: 
+  ``organization_name, user_id`` and ``organization_id``
 
- # DELETE/ volunteers
- . It deletes an existing volunteer, identified by the id in the parameter. 
 
- # Reviews endpoints
- # POST/ review
- It creates a new review . The request body should be a JSON object with the following properties:
- .user_id: The User who reviewed
- .organization_id: The organization being reviewed
- .rating: ratings of the review
- .comments: The comments from the review
+ ### e. DELETE/ volunteers
+ - It deletes an existing volunteer, identified by the id in the parameter. 
 
- # GET/ reviews/:id
- It retrieves a single review, identified by the parameter in the URL . It has the following properties
- .user_id: The User who reviewed
- .organization_id: The organization being reviewed
- .rating: ratings of the review
- .comments: The comments from the review
+ ## 3. Reviews Endpoints
+ ### a.  POST/ review
+ - It creates a new review. 
+- The request body should be a ``JSON object`` with the following attributes:
+  ``user_id, organization_name, organization_id,username, rating`` and ``comments`` 
+
+
+ ### b.  GET/ reviews/:id
+ - It retrieves a single review, identified by the parameter in the URL. 
+ - It has the following attributes: ``user_id, organization_name, organization_id,username, rating`` and ``comments`` 
+
  
- # PUT/reviews/:id
- This endpoint updates an existing review, identified by the id parameter in the URL. The request body should be a JSON object.
+ ### c. PATCH/reviews/:id
+ - This endpoint updates an existing review, identified by the id parameter in the URL. 
+ - The request body should be a ``JSON object.``
 
- # DELETE/ reviews
- It deletes a certain review identified by the ID parameter in the URL
+ ### d. DELETE/ reviews
+ - It deletes a certain review identified by the ID parameter in the URL.
 
- # Profile endpoits
- # POST/ profile
- This endpoint creates a new profile. The request body should be a JSON object with the following properties:
-      .image_url: The image of the profile.
-      .first_name: The fist_name of the profile.
-      .last_name: The last_name of the profile.
-      .age: The age of the profile.
-      .gender: The gender of the profile.
-      .country: The country of the profile.
-      .contact: The contact of the profikle.
-      .skills: The skills of the profile.
-      .user_id: The profile of a certain user.
-# GET/ profile
-It retrieves all the profile. The response body as an array of profile objects, each with the following properties:
- .image_url: The image of the profile.
-      .first_name: The fist_name of the profile.
-      .last_name: The last_name of the profile.
-      .age: The age of the profile.
-      .gender: The gender of the profile.
-      .country: The country of the profile.
-      .contact: The contact of the profikle.
-      .skills: The skills of the profile.
-      .user_id: The profile of a certain user. 
-# PUT/ profile/ id
-It updates an existing profile identified by the id parameter in the URL.The request body should be a JSON object with the following properties:
- .first_name: The fist_name of the profile.
-  .last_name: The last_name of the profile.
-   .age: The age of the profile.
-   .gender: The gender of the profile.
-    .country: The country of the profile.
-      .contact: The contact of the profikle.
-      .skills: The skills of the profile.
-       .user_id: The profile of a certain user. 
-# DELETE/ profile/:id
-This endpoint deletes an existing profile, identified by the id parameter in the URL.
+ ## 4. Profile endpoits
+ ### a. POST/ profile
+ - This endpoint creates a new profile. 
+ - The request body should be a JSON object with the following attributes: 
+   ``image_url, first_name,last_name, age, gender, country, contact, skills`` and 
+   ``user_id``
+### b. GET/ profile
+- It retrieves all the profiles. The response body is an array of profile objects, each with the following attributes: ``image_url, first_name,last_name, age, gender, country, contact, skills`` and 
+   ``user_id``
 
-# Organization endpoints
-# POST/ organization
-It creates a new organization. The request body is a JSON object with the following properties:
-.name: name of the organization
-.description: description about the organization
-.Location: place where the organization is located
-.Year_established: The year the organization was established.
-.image_url: Image of the organization
-.video_url: The video about the organization.
-.info: information about the organization.
-.user_id: The id of a certain user in organization.
+### c. PUT/ profile/ id
+- It updates an existing profile identified by the id parameter in the URL.
+- The request body should be a JSON object with the following attributes: ``image_url, first_name,last_name, age, gender, country, contact, skills`` and 
+   ``user_id``
 
-# GET/organization/:id
-This endpoints let you get a certain organization by the id parameter in the URL. The response body is an object representing the organization, with the following properties:
-.name: name of the organization
-.description: description about the organization
-.Location: place where the organization is located
-.Year_established: The year the organization was established.
-.image_url: Image of the organization
-.video_url: The video about the organization.
-.info: information about the organization.
-.user_id: The id of a certain user in organization.
+### d. DELETE/ profile/:id
+- This endpoint deletes an existing profile, identified by the id parameter in the URL.
 
-# PUT /organization/:id
-This endpoint updates an existing organization, identified by the id parameter in the URL. The request body should be a JSON object with the following properties:
-.name: name of the organization
-.description: description about the organization
-.Location: place where the organization is located
-.Year_established: The year the organization was established.
-.image_url: Image of the organization
-.video_url: The video about the organization.
-.info: information about the organization.
-.user_id: The id of a certain user in organization
-The response body is an object representing the newly updated organization, with those properties, plus a unique identifier
+## 5. Organization Endpoints
+### a. POST/ organization
+- It creates a new organization. 
+- The request body is a ``JSON object`` with the following attributes:
+ ``name, description, Location, Year_established, image_url, video_url, info`` and ``user_id``
+### b. GET/organization/:id
+- This endpoint lets you get a certain organization by the id parameter in the URL. - The response body is an object representing the organization, with the following 
+  attributes: ``name, description, Location, Year_established, image_url, 
+  video_url, info`` and ``user_id``
 
-# DELETE/ profiles/:id
-This endpoint deletes an existing profiles, identified by the id parameter in the URL.
 
-# Donations endpoints
-# POST/ donations/:id
-This endpoint creates a new donor. The request body is a JSON object with the following properties:
-.Contributed_amount : The amount the donors contribute
-.Organization_id: The id of a certain organization
-.user_id: The idea o a certain us
+# c. PATCH /organization/:id
+- This endpoint updates an existing organization, identified by the id parameter in the URL. 
+- The request body should be a ``JSON object`` with the following attributes: ``name, description, Location, Year_established, image_url, video_url, info`` and ``user_id``
 
-# GET/ donations/:id
-This endpoint returns a single donor, identified by the id parameter in the URL. The response body is an object representing the user, with the following properties:
-.Contributed_amount : The amount the donors contribute
-.Organization_id: The id of a certain organization
-.user_id: The idea o a certain user
+- The response body is an object representing the newly updated organization, with 
+ those attributes, plus a unique identifier
 
-# PUT/ donations/:id
-This endpoint updates an existing donor, identified by the id parameter in the URL. The request body should be a JSON object with the following properties:
-.Contributed_amount : The amount the donors contribute
-.Organization_id: The id of a certain organization
-.user_id: The idea o a certain user 
+# d. DELETE/ profiles/:id
+- This endpoint deletes an existing profile, identified by the id parameter in the 
+ URL.
 
-# DELETE/ donations/:id
-This endpoint deletes an existing donor, identified by the id parameter in the URL.
+# 6. Donations Endpoints
+### a. POST/ donations/:id
+- This endpoint creates a new donor. The request body is a JSON object with the following attributes:
+``Contributed_amount, Organization_id`` and ``user_id`` 
 
-# Releases
-No releases published
+### b. GET/ donations/:id
+- This endpoint returns a single donor, identified by the id parameter in the URL. 
+- The response body is an object representing the user, with the following attributes: ``Contributed_amount, Organization_id`` and ``user_id``
 
-# Packages
-No packages published
+### c. PATCH/ donations/:id
+- This endpoint updates an existing donor, identified by the id parameter in the URL. The request body should be a ``JSON object`` with the following attributes:
+``Contributed_amount, Organization_id`` and ``user_id``
+ 
 
-# Contributors
-David Mwai
-Trevor Febias
-Joseph Musyoki
-Tulla
-Simon Mureithi
-Faith Kigen
+### d. DELETE/ donations/:id
+- This endpoint deletes an existing donor, identified by the id parameter in the URL.
+
+you can also view the documentation of the routes in;
+``https://app.swaggerhub.com/apis-docs/Musyoki-Wambua/rising_together/1.0.0#/User``
+
+
+
+## Contributors
+- Project contributed to by:
+1. [Joseph Wambua](https://github.com/Musyoki-Wambua)
+2. [David Mwai](https://github.com/DKarimi90)
+3. [Simon Muriithi](https://github.com/Fleur41)
+4. [Trevor Thiiru](https://github.com/Febiasm)
+5. [Antony Tulla](https://github.com/tony555t)
+6. [Faith Kigen](https://github.com/faithkigen)
+
+
+## License
+- This project is licensed under the [MIT License](https://choosealicense.com/license/mit/)
 
 
 

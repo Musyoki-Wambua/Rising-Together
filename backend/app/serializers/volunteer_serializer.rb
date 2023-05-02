@@ -1,6 +1,6 @@
-class VolunteerSerializer < ActiveModel::Serializer
-  attributes :id, :organization_name, :user_id
+# class VolunteerSerializer < ActiveModel::Serializer
+#   # attributes :id, :organization_name, :user_id
 
-  belongs_to :organization
-  belongs_to :user
-end
+#   belongs_to :organization
+#   belongs_to :user
+# end

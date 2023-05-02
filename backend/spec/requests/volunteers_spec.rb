@@ -1,10 +1,10 @@
 require 'swagger_helper'
 
-RSpec.describe 'reviews', type: :request do
+RSpec.describe 'volunteers', type: :request do
 
-  path '/reviews' do
+  path '/volunteers' do
 
-    get('list reviews') do
+    get('list volunteers') do
       response(200, 'successful') do
 
         after do |example|
@@ -18,7 +18,7 @@ RSpec.describe 'reviews', type: :request do
       end
     end
 
-    post('create review') do
+    post('create volunteer') do
       response(200, 'successful') do
 
         after do |example|
@@ -33,11 +33,11 @@ RSpec.describe 'reviews', type: :request do
     end
   end
 
-  path '/reviews/{id}' do
+  path '/volunteers/{id}' do
     # You'll want to customize the parameter types...
     parameter name: 'id', in: :path, type: :string, description: 'id'
 
-    get('show review') do
+    get('show volunteer') do
       response(200, 'successful') do
         let(:id) { '123' }
 
@@ -52,7 +52,7 @@ RSpec.describe 'reviews', type: :request do
       end
     end
 
-    patch('update review') do
+    patch('update volunteer') do
       response(200, 'successful') do
         let(:id) { '123' }
 
@@ -67,7 +67,7 @@ RSpec.describe 'reviews', type: :request do
       end
     end
 
-    put('update review') do
+    put('update volunteer') do
       response(200, 'successful') do
         let(:id) { '123' }
 
@@ -82,7 +82,7 @@ RSpec.describe 'reviews', type: :request do
       end
     end
 
-    delete('delete review') do
+    delete('delete volunteer') do
       response(200, 'successful') do
         let(:id) { '123' }
 
