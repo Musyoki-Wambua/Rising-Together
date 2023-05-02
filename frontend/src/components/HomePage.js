@@ -154,9 +154,11 @@ function HomePage() {
                         <p className="text-lg mt-">{ngos[1].name}</p>
                       )}
                       <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                        <button className="bg-green-700 w-full h-8 text-xl    text-white">
-                          Donte
+                      <Link to={`/organizationDetails/${ngos[1].id}`}>
+                        <button className="bg-green-700 w-full h-8 text-xl text-white">
+                          Donate
                         </button>
+                      </Link>
                       </div>
                     </div>
                   </div>
@@ -193,9 +195,11 @@ function HomePage() {
                         <p className="text-lg mt-">{targetedNGO3.name}</p>
                       )}
                       <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                        <button className="bg-green-700 w-full h-8 text-xl    text-white">
-                          Donte
+                      <Link to={`/organizationDetails/${ngos[2].id}`}>
+                        <button className="bg-green-700 w-full h-8 text-xl text-white">
+                          Donate
                         </button>
+                      </Link>
                       </div>
                     </div>
                   </div>
@@ -228,9 +232,11 @@ function HomePage() {
                         <p className="text-lg mt-">{targetedNGO4.name}</p>
                       )}
                       <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                        <button className="bg-green-700 w-full h-8 text-xl    text-white">
-                          Donte
+                      <Link to={`/organizationDetails/${ngos[1].id}`}>
+                        <button className="bg-green-700 w-full h-8 text-xl text-white">
+                          Donate
                         </button>
+                      </Link>
                       </div>
                     </div>
                   </div>
@@ -263,9 +269,11 @@ function HomePage() {
                         <p className="text-lg mt-">{targetedNGO5.name}</p>
                       )}
                       <div className="mt-4 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                        <button className="bg-green-700 w-full h-8 text-xl    text-white">
-                          Donte
+                      <Link to={`/organizationDetails/${ngos[2].id}`}>
+                        <button className="bg-green-700 w-full h-8 text-xl text-white">
+                          Donate
                         </button>
+                      </Link>
                       </div>
                     </div>
                   </div>

@@ -37,16 +37,16 @@
 	width: 65vmin;
 	height: 55vmin;
 	overflow: hidden;
-	background: linear-gradient(-21deg, #2196f3 50%, transparent 50%),linear-gradient(to right, #cc270a 50%, #e1bb47 50%), linear-gradient(to right, #2196f3 50%, #ffc107 50%);
+	background: linear-gradient(-21deg, #2196f3 50%, transparent 50%),linear-gradient(to right, #cc270a 50%, #fff700 50%), linear-gradient(to right, #2196f3 50%, #ffc107 50%);
   }
   
   .top {
-	margin: 11vmin 0 0 20vmin;
+	margin: 11vmin 0 0 8vmin;
   }
   
   .bottom {
-	margin: 23vmin;
+	margin: 25vmin;
   }
-  .sup{
-	margin: 22vmin;
+  .down{
+	margin: 10vmin 0 0 35vmin;
   }

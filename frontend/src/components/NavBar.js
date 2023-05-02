@@ -160,10 +160,8 @@ function NavBar() {
                 <a
                   href="#"
                   class="inline-flex items-center text-white hover:bg-green-700 bg-green-800 hover:text-white font-medium px-3 py-1 rounded-md transition-colors duration-300">
-	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-	  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-	</svg>
-
+	 
+<img className="h-8 mr-3"src="https://img.icons8.com/?size=512&id=99284&format=png" alt="Back Arrow Vector - Go Back Icon @clipartmax.com"/>
 	Logout
                 </a>
             
