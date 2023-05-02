@@ -193,17 +193,11 @@ function OrganizationDetails() {
 
     if (role === "admin") {
       return (
-        <div>
-          <button
-            className="flex items-center ml-6 justify-center p-2 border border-green-500 text-white shadow rounded-lg"
-            onClick={handleUpdateInfo}
-          >
-            <div className="relative">
-            <img className="h-8 w-8" src="https://img.icons8.com/?size=512&id=6xwFjsdYanOB&format=png"/>
-            </div>
-          </button>
-          <span className="ml-2">{name}</span>
-        </div>
+        <button>
+        <div class="relative" onClick={handleUpdateInfo}>
+           <img className="h-8 ml-7 bg-green-500 rounded-full f  p-1    " src="https://img.icons8.com/?size=512&id=r4ZoJ0KDic77&format=png"/>
+          </div>
+        </button>
       );
     } else {
       return null;
@@ -258,16 +252,11 @@ function OrganizationDetails() {
 
   if (role === "admin") {
     return (
-      <div>
-        <button
-          className="flex w-9 items-center justify-center p-2 border border-green-500 text-white shadow rounded-lg"
-          onClick={handleClick}
-        >
-          <div className="relative">
-          <img className="h-8" src="https://img.icons8.com/?size=512&id=6xwFjsdYanOB&format=png"/>
-          </div>
-        </button>
-      </div>
+      <button>
+      <div class="relative" onClick={handleClick}>
+         <img className="h-8 ml-7 bg-green-500 rounded-full f  p-1    " src="https://img.icons8.com/?size=512&id=r4ZoJ0KDic77&format=png"/>
+        </div>
+      </button>
     );
   } else {
     return null;
@@ -311,7 +300,7 @@ function OrganizationDetails() {
             }}
           >
             <div class="relative">
-             <img className="h-8" src="https://img.icons8.com/?size=512&id=6xwFjsdYanOB&format=png"/>
+             <img className="h-8" src="https://img.icons8.com/?size=512&id=r4ZoJ0KDic77&format=png"/>
             </div>
           </button>
         </div>
