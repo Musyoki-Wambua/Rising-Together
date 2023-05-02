@@ -5,7 +5,7 @@ const ReviewsCards = ({ match }) => {
 
   useEffect(() => {
     const fetchReviews = async () => {
-      const response = await fetch('https://your-api-url.com/reviews');
+      const response = await fetch('https://rising-together-ni0b.onrender.com/reviews');
       const data = await response.json();
       setReviews(data);
     };
