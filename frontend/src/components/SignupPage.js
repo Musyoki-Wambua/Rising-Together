@@ -16,9 +16,20 @@ function SignupPage() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userData),
     })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.error(error));
+    .then((response) => {
+      if (response.ok) {
+        return response.json().then((data) => {
+          console.log(data);
+          window.alert("You have successfully signed up! kindly Login on the Login Page ");
+        });
+      } else {
+        throw new Error("Signup failed");
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+      window.alert("Signup failed. One of the filds was invalid Please try again.");
+    });
   };
 
   return (
@@ -28,7 +39,7 @@ function SignupPage() {
     >
       <a
         href=",,"
-        style={{ height: "630px" }}
+        style={{ height: "65vh" }}
         className=" w-96 relative block overflow-hidden rounded-xl bg-[url(https://images.unsplash.com/photo-1515658323406-25d61c141a6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=709&q=80)] bg-cover bg-center bg-no-repeat"
       >
         <div className="absolute inset-0 bg-black/25"></div>
@@ -124,7 +135,7 @@ function SignupPage() {
             <input
               className="border rounded-lg px-3 py-2 w-full"
               type="role"
-              placeholder="role"
+              placeholder="user/admin"
               id="confirmPassword"
               name="confirmPassword"
               value={role}
