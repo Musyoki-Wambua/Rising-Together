@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ChatBox from "./ChatBox";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -19,8 +18,8 @@ function HomePage() {
   }, []);
   if (isLoading) {
     return (
-      <div class=" bg-gray-900 flex items-center justify-center w-full h-full">
-      <div class="flex justify-center items-center space-x-1 text-sm  text-gray-700">
+      <div className=" bg-gray-900 flex items-center justify-center w-full h-full">
+      <div className="flex justify-center items-center space-x-1 text-sm  text-gray-700">
          
             <svg fill='none' class="w-6 h-6 animate-spin" viewBox="0 0 32 32" xmlns='http://www.w3.org/2000/svg'>
               <path clip-rule='evenodd'
@@ -35,25 +34,7 @@ function HomePage() {
     );
   }
 
-  function AdminButton() {
-    const location = useLocation();
-    const role = new URLSearchParams(location.search).get("role");
 
-    if (role === "admin") {
-      return (
-        <button className="bg-red-500 text-white px-4 py-2 rounded-lg">
-          Admin Button
-        </button>
-      );
-    } else {
-      return null;
-    }
-  }
-  const targetedNGOId = 1;
-  const targetedNGO = ngos.find((ngo) => ngo.id === targetedNGOId);
-
-  const targetedNGOId2 = 2;
-  const targetedNGO2 = ngos.find((ngo) => ngo.id === targetedNGOId2);
 
   const targetedNGOId3 = 3;
   const targetedNGO3 = ngos.find((ngo) => ngo.id === targetedNGOId3);
@@ -82,7 +63,7 @@ function HomePage() {
         <div className="mt-6 w-full  md:w-1/2 p-">
           <div className="h-52">
             <a
-              href="#"
+              href="jj"
               style={{ width: "", height: "67.6vh" }}
               className="mt- group relative block bg-black"
             >
@@ -127,7 +108,7 @@ function HomePage() {
           <div className="grid grid-cols-2 gap-1 gap-x-6">
             <div className="">
               <a
-                href="#"
+                href="jj"
                 style={{ width: "50vh ", height: "33.6vh" }}
                 className=" group relative block bg-black"
               >
@@ -168,7 +149,7 @@ function HomePage() {
  
 </div>
               <a
-                href="#"
+                href="jj"
                 style={{ width: "50vh ", height: "33.6vh" }}
                 className=" group relative block bg-black"
               >
@@ -205,7 +186,7 @@ function HomePage() {
             </div>
             <div className=" ">
               <a
-                href="#"
+                href="jj"
                 style={{ width: "50vh ", height: "33.6vh" }}
                 className=" group relative block bg-black"
               >
@@ -242,7 +223,7 @@ function HomePage() {
             </div>
             <div>
               <a
-                href="#"
+                href="jj"
                 style={{ width: "50vh ", height: "33.6vh" }}
                 className=" group relative block bg-black"
               >
@@ -293,7 +274,7 @@ function HomePage() {
       >
         <a
           class="relative flex items-start justify-between border border-gray-300 p-4 shadow-xl sm:p-6 lg:p-8"
-          href="#"
+          href="jj"
         >
           <div class="pt-4 text-gray-500">
             <img
@@ -302,7 +283,7 @@ function HomePage() {
               stroke="currentColor"
               viewBox="0 0 24 24"
               src="https://img.icons8.com/color/256/green-arrow.png"
-            ></img>
+            alt="dd"></img>
 
             <h3 class="mt-8 text-base   text-gray-900  ">
               Organizations worldwide seek to join Raising Together in order to
@@ -318,7 +299,7 @@ function HomePage() {
         {/* second */}
         <a
           class="relative flex items-start justify-between   border border-gray-300 p-4 shadow-xl sm:p-6 lg:p-8"
-          href="#"
+          href="jj"
         >
           <div class="pt-4 text-gray-500">
             <img
@@ -327,7 +308,7 @@ function HomePage() {
               stroke="currentColor"
               viewBox="0 0 24 24"
               src="https://img.icons8.com/external-wanicon-two-tone-wanicon/256/external-gift-award-and-success-wanicon-two-tone-wanicon.png"
-            ></img>
+            alt="ff"></img>
 
             <h3 class="mt-8 text-base   text-gray-900  ">
               Individuals contribute to their preferred initiatives through
@@ -341,7 +322,7 @@ function HomePage() {
         {/* 3rd */}
         <a
           class="relative flex items-start justify-between   border border-gray-300 p-4 shadow-xl sm:p-6 lg:p-8"
-          href="#"
+          href="jj"
         >
           <div class="pt-4 text-gray-500">
             <img
@@ -350,7 +331,7 @@ function HomePage() {
               stroke="currentColor"
               viewBox="0 0 24 24"
               src="https://img.icons8.com/external-others-pike-picture/256/external-Closed-Business-crisis-others-pike-picture.png"
-            ></img>
+           alt="rr" ></img>
 
             <h3 class="mt-8 text-base   text-gray-900  ">
               Organizations worldwide seek to partner with Raising Together to
@@ -368,13 +349,13 @@ function HomePage() {
 
         <a
           class="relative flex items-start justify-between   border border-gray-300 p-4 shadow-xl sm:p-6 lg:p-8"
-          href="#"
+          href="jj"
         >
           <div class="pt-4 text-gray-500">
             <img
               class="h-8 w-8 mx-auto justify-center sm:h-10 sm:w-10"
               src="https://img.icons8.com/external-wanicon-two-tone-wanicon/256/external-earth-nature-wanicon-two-tone-wanicon.png"
-            ></img>
+           alt="" ></img>
 
             <h3 class="mt-8 text-base   text-gray-900  ">
               Nonprofit organizations globally seek to partner with Raising
@@ -421,7 +402,7 @@ function HomePage() {
               style={{ width: "100vh", height: "55vh" }}
               className="     "
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Continents.svg/1920px-Continents.svg.png?20061115170447"
-            />
+            alt="ee"/>
           </div>
         </div>
       </div>

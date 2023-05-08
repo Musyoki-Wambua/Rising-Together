@@ -6,14 +6,9 @@ import login from "./Images/login.png"
 import organizations from "./Images/organizations.png"
 import imapacthub from "./Images/impact.png"
 import landing from "./Images/landing.png"
-import NavBar from "./NavBar.js";
+ 
 import search from "./Images/search.png";
-// import gogin_getstarted from "./img/gogin_getstarted.png";
-// import home from "./img/home.png";
-// import addmeme from "./img/addmeme.png";
-// import mymeme from "./img/mymeme.png";
-// import searchmeme from "./img/searchmeme.png";
-// import deletemem from "./img/deletemem.png";
+ 
 const Help = () => {
   return (
     <div className="bg-gray-200 min-h-screen">

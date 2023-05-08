@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
 const DonationForm = () => {
   const [amount, setAmount] = useState(0);
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [paymentMethod, setPaymentMethod] = useState("");
+  const [firstName ] = useState("");
+  const [lastName] = useState("");
+  const [email] = useState("");
+  const [paymentMethod] = useState("");
   const [donationAmount, setDonationAmount] = useState('')
   const [isTestDonation, setIsTestDonation] = useState(false);
   const [isOfflineDonation, setIsOfflineDonation] = useState(false);
   const [isPaypal, setIsPaypal] = useState(false);
-  const [formData, setFormData] = useState([])
-  const [errors, setErrors]= useState([])
+  const [setFormData] = useState([])
+  const [setErrors]= useState([])
 
   const handleSubmit = (e) => {
     e.preventDefault();

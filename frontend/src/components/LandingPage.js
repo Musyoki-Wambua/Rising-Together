@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import ChatBox from "./ChatBox";
+ 
 function LandingPage() {
   return (
     <section style={{ backgroundColor: '#0E503F' }} className="min-h-screen bg-green-900">
-     <div className="flex flex-wrap items-center text-xl text-white"><img className="h-14 w-14 ml-20"src={require('./Images/logo.png')} alt="My Image" />Raising Together</div>  
+     <div className="flex flex-wrap items-center text-xl text-white"><img className="h-14 w-14 ml-20"src={require('./Images/logo.png')} alt="My " />Raising Together</div>  
   <div className="flex flex-wrap items-center">
     <div className="w-full md:w-1/2 px-4">
       <div className="text-white font-serif ml-64 mt-20  text-6xl">

@@ -2,97 +2,16 @@ import "./CSS/insight.css"
  import NavBar from "./NavBar"
 function Insight (){
     return (
-    //     <body className="justify-end">
-    //     <div className="   main-container">
-    //         <div className="year-stats">
-    //             <div className="month-group">
-    //                 <div className="bar h-100"></div>
-    //                 <p className="month">Jan</p>
-    //             </div>
-    //             <div className="month-group">
-    //                 <div className="bar h-50"></div>
-    //                 <p className="month">Feb</p>
-    //             </div>
-    //             <div className="month-group">
-    //                 <div className="bar h-75"></div>
-    //                 <p className="month">Mar</p>
-    //             </div>
-    //             <div className="month-group">
-    //                 <div className="bar h-25"></div>
-    //                 <p className="month">Apr</p>
-    //             </div>
-    //             <div className="month-group selected">
-    //                 <div className="bar h-100"></div>
-    //                 <p className="month">May</p>
-    //             </div>
-    //             <div className="month-group">
-    //                 <div className="bar h-50"></div>
-    //                 <p className="month">Jun</p>
-    //             </div>
-    //             <div className="month-group">
-    //                 <div className="bar h-75"></div>
-    //                 <p className="month">Jul</p>
-    //             </div>
-    //             <div className="month-group">
-    //                 <div className="bar h-25"></div>
-    //                 <p className="month">Aug</p>
-    //             </div>
-    //             <div className="month-group">
-    //                 <div className="bar h-50"></div>
-    //                 <p className="month">Sep</p>
-    //             </div>
-    //             <div className="month-group">
-    //                 <div className="bar h-75"></div>
-    //                 <p className="month">Oct</p>
-    //             </div>
-    //             <div className="month-group">
-    //                 <div className="bar h-25"></div>
-    //                 <p className="month">Nov</p>
-    //             </div>
-    //             <div className="month-group">
-    //                 <div className="bar h-100"></div>
-    //                 <p className="month">Dez</p>
-    //             </div>
-    //         </div>
     
-    //         <div className="stats-info ">
-    //             <div className="graph-container">
-    //                 <div className="percent">
-    //                     <svg viewBox="0 0 36 36" className="circular-chart">
-    //                         <path className="circle" stroke-dasharray="100, 100" d="M18 2.0845
-    //       a 15.9155 15.9155 0 0 1 0 31.831
-    //       a 15.9155 15.9155 0 0 1 0 -31.831" />
-    //                         <path className="circle" stroke-dasharray="85, 100" d="M18 2.0845
-    //       a 15.9155 15.9155 0 0 1 0 31.831
-    //       a 15.9155 15.9155 0 0 1 0 -31.831" />
-    //                         <path className="circle" stroke-dasharray="60, 100" d="M18 2.0845
-    //       a 15.9155 15.9155 0 0 1 0 31.831
-    //       a 15.9155 15.9155 0 0 1 0 -31.831" />
-    //                         <path className="circle" stroke-dasharray="30, 100" d="M18 2.0845
-    //       a 15.9155 15.9155 0 0 1 0 31.831
-    //       a 15.9155 15.9155 0 0 1 0 -31.831" />
-    //                     </svg>
-    //                 </div>
-    //                 <p>Total: $2075</p>
-    //             </div>
-    
-    //             <div className="info">
-    //                 <p>Most expensive category <br /><span>Restaurants & Dining</span></p>
-    //                 <p>Updated categories <span>2</span></p>
-    //                 <p>Bonus payments <span>$92</span></p>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </body>
     <div className="bg-blue-900 font-serif h-full">
         <NavBar/>
     <div className="mt-5 grid grid-cols-2">
     <div className=" ">
     <div class='title'>
   <p className="text-center text-4xl mt-7 text-green-300">Access Key Metrics and Performance Indicators</p>
-   <p class="text-center text-2xl mt-5 text-green-200"> Real-Time Data and Analytics</p>
+   <p className="text-center text-2xl mt-5 text-green-200"> Real-Time Data and Analytics</p>
 </div>
-<svg class='container' width="529px" height="486px" viewBox="30 27 529 286" version="1.1" xmlns="http://www.w3.org/2000/svg" >
+<svg className='container' width="529px" height="486px" viewBox="30 27 529 286" version="1.1" xmlns="http://www.w3.org/2000/svg" >
      
     <desc>Created with Sketch.</desc>
     <defs></defs>
@@ -184,10 +103,10 @@ function Insight (){
 </svg>
 </div>
 <div>
-    <div class="pie font-bold">
-    <div class="down text-black fixed">30% Empowering <br></br> Communities </div>
-  <div class="top text-bold text-white">19% Protecting the<br></br> Environment </div>
-  <div class="bottom text-white">51% Supporting Those in Need</div>
+    <div className="pie font-bold">
+    <div className="down text-black fixed">30% Empowering <br></br> Communities </div>
+  <div className="top text-bold text-white">19% Protecting the<br></br> Environment </div>
+  <div className="bottom text-white">51% Supporting Those in Need</div>
   
   
 </div>

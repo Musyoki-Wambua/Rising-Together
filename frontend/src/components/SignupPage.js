@@ -27,17 +27,17 @@ function SignupPage() {
       className="flex items-center justify-center min-h-screen"
     >
       <a
-        href="#"
+        href=",,"
         style={{ height: "630px" }}
         className=" w-96 relative block overflow-hidden rounded-xl bg-[url(https://images.unsplash.com/photo-1515658323406-25d61c141a6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=709&q=80)] bg-cover bg-center bg-no-repeat"
       >
-        <div class="absolute inset-0 bg-black/25"></div>
+        <div className="absolute inset-0 bg-black/25"></div>
 
-        <div class="absolute bottom-0 p-4 sm:p-6 lg:p-8 text-white">
-          <h3 class="text-xl font-bold sm:text-2xl">
+        <div className="absolute bottom-0 p-4 sm:p-6 lg:p-8 text-white">
+          <h3 className="text-xl font-bold sm:text-2xl">
             BE THE CHANGE YOU WISH TO SEE IN THE WORLD!
           </h3>
-          <p class="text-sm">We rise by lifting others</p>
+          <p className="text-sm">We rise by lifting others</p>
         </div>
       </a>
 
@@ -108,7 +108,7 @@ function SignupPage() {
               className="border rounded-lg px-3 py-2 w-full"
               type="password"
               placeholder="confirm password"
-              id="confirmPassword"
+              id="confirmPassword1"
               name="confirmPassword"
               value={password_confirmation}
               onChange={(event) => setPasswordConfirmation(event.target.value)}

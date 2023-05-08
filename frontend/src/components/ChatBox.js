@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 function ChatBox() {
-  const [userMessage, setUserMessage] = useState("");
   const [conversation, setConversation] = useState([
     { text: "Hey!", sender: "bot" },
   ]);
@@ -71,7 +70,7 @@ function ChatBox() {
   }
 
   return (
-    <div className="max-w-lg mx-auto my-10 p-6 bg-gray-50 rounded-lg shadow-lg">
+    <div className="max-w-lg mx-auto my-10 p-6 bg-gray-50 z-20 rounded-lg shadow-lg">
         <button
         className="text-gray-600 hover:text-gray-900 focus:outline-none"
         onClick={() => setShowChat(false)}

@@ -1,15 +1,11 @@
 import { BrowserRouter as Router, Routes, Route }  from "react-router-dom";
-import NavBar from "./components/NavBar";
 import WhoWeAre from "./components/WhoWeAre";
-import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
-import DonationForm from "./components/DonationForm";
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Login";
 import Organization from "./components/Organization";
 import OrganizationDetails from "./components/OrganizationDetails";
 import Profile from "./components/Profile";
-import Review from "./components/Review";
 import SignupPage from "./components/SignupPage";
 import Help from "./components/Help";
  import Insight from "./components/Insight";
